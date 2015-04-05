@@ -1,0 +1,46 @@
+/* Fix ui-bootstrap nav menu */
+@media (max-width: 767px) {
+
+    .visible-xs.collapse.in {
+        display: block!important;
+    }
+    .visible-xs.collapse {
+        display: none!important;
+    }
+
+}
+
+
+/* home page */
+.master {
+    margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+}
+
+#home #intro {
+    height: 500px;
+    background-color: #226666;
+}
+
+#home #services {
+    height: 300px;
+    background-color: #7887AB;
+}
+
+#home #projects {
+    height: 300px;
+    background-color: #AA8439;
+}
+
+#contact {
+    height: 700px;
+    background-color: lightseagreen;
+}
+
+#footer {
+    height: 150px;
+    background-color: lightblue;
+}

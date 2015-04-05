@@ -1,0 +1,23 @@
+<div id="chat-box" class="panel panel-primary col-lg-3 col-md-4 col-sm-6 col-xs-12" outline="0" style="right: 15px; position: fixed; z-index: 99999; float: right; bottom:0; padding:0;">
+  <div class="panel-heading" style="width: 100%;">
+    <span>Chat Now</span><span class="close glyphicon glyphicon-remove pull-right" ng-click="isCollapsed = !isCollapsed"></span>
+    <span class="open pull-right glyphicon glyphicon-minus"></span>
+  </div>
+  <div ng-show="isCollapsed">
+    <div class="row expert">
+      <img class="col-xs-4" alt="our expert" src="http://placehold.it/50x50">
+      <div class="col-xs-8"><h3>John Doe</h3><p>Our Expert</p></div>
+    </div>
+    <div class="panel-body">
+      <ul class="chat" style="width: 100%; height: 200px">
+        
+      </ul>
+    </div>
+    <div class="panel-footer">
+      <div class="input-group" style="max-width: 270px;">
+        <input class="form-control input-sm" placeholder="Type your message here">
+          <span class="input-group-btn"><button class="btn btn-warning btn-sm" id="btn-chat">Send</button></span>
+      </div>
+    </div>
+  </div>
+</div>
