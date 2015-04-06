@@ -16,31 +16,318 @@
     margin-top: 50px;
 }
 
-.container {
-    width: 100%;
-}
-
-#home #intro {
-    height: 500px;
-    background-color: #226666;
-}
-
-#home #services {
-    height: 300px;
-    background-color: #7887AB;
-}
 
 #home #projects {
     height: 300px;
     background-color: #AA8439;
 }
 
-#contact {
-    height: 700px;
-    background-color: lightseagreen;
+
+/* helios roofing */
+.btn-helios {
+  color: #28426D;
+  background-color: #fff;
+  border-color: #28426D; 
+  border: solid 3px;
 }
 
-#footer {
-    height: 150px;
-    background-color: lightblue;
+.btn-helios:hover{
+  color: #fff;
+  background-color: #28426D;
+  border-color: #28426D; 
 }
+
+.btn, .thumbnail{
+  border-radius: 0;
+}
+
+.thumbnail-icon{
+  width: 40px;
+  float: right;
+}
+
+.thumbnail-icon:hover{
+  width: 45px;
+}
+
+.navbar-default {
+background-color: #ffffff;
+border-color: none;
+border-top: 5px solid #28426D;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover {
+color: #ffffff;
+background-color: #28426D;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: #28426D;
+}
+
+.menu-img{
+  height: 30px;
+}
+
+.v-center {display:table!important; 
+  height:50px;
+}
+
+.v-center div[class*='col-'] {
+  display: table-cell!important;
+    vertical-align:middle;
+    float:none;
+}
+
+.panel{
+  position: fixed;
+  right: 15px;
+  width: 300px;
+  z-index: 1200;
+  border: none;
+}
+
+.panel-primary>.panel-heading{
+  background-color: #28426D;
+  border-color: #28426D; 
+}
+
+.panel-primary {
+border-color: none;
+-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,0.18);
+box-shadow: 0 0 9px 0 rgba(0,0,0,0.18);
+}
+
+.carousel{
+  height: auto;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+top: 70%;
+}
+
+.carousel-control.right, .carousel-control.left{
+  background-image:none;
+}
+
+.carousel-indicators {
+bottom: 100px;
+}
+
+.carousel-caption{
+  padding-bottom: 120px;
+}
+
+.carousel-caption .glyphicon{
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.carousel-inner .item {
+  height: 500px;
+}
+
+.carousel-inner img{
+  -webkit-filter: contrast(1.8) grayscale(0.1) invert(0.2);
+}
+
+.carousel-inner h1{
+  font-family: Arial;
+}
+
+.carousel-inner h1, .carousel-inner p{
+  text-shadow:10px 7px 35px black;
+}
+
+
+.btn-lg, .btn-group-lg>.btn {
+border-radius: 0px;
+}
+
+.btn-outline {
+color: #fff;
+background-color: rgba(255, 200, 67, 0.8);
+}
+
+/* Sart of weather-bar*/
+
+#weatherBar {
+  position: absolute;
+  z-index: 19;
+  background-color: black;
+  height: 145px;
+  left: 50%;
+  margin-left: -250px;
+  top: 730px;
+}
+
+.table{
+  color: white;
+}
+
+th{
+  text-align: center;
+  font-size: smaller;
+}
+
+th img{
+  width: 34px;
+  margin-top: -7px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+padding-top: 11px;
+border-top: none;
+width: 70px;
+vertical-align: middle;
+}
+
+.table-bordered, .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+border: none;
+}
+
+.date{
+  font-weight: 100;
+}
+
+.project_service{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 11px;
+  color: black;
+}
+
+.roof_repair{
+  background-color: #6DADC9;
+}
+
+.gutter_fix{
+  background-color: #ADCEE1;
+}
+.inspection {
+  background-color: #AEBCCE
+}
+
+.default_service{
+  background-color: antiquewhite;
+}
+
+/* End of weather-bar*/
+
+.logo img{
+  margin: 120px 0 0 0;
+}
+
+.logo .text {
+  margin-bottom: 55px;
+  font-size: 21px;
+  color: rgb(50, 81, 113);
+}
+
+/* Start of Footer */
+#contact {
+  color: #fff;
+  background-image:url('/static/img/map.jpg');
+  background-color: rgb(48, 124, 156);
+  min-height: 700px;
+  background-repeat:no-repeat;
+  background-position:center; 
+}
+
+#contact h1{
+  font-weight: normal;
+  padding: 30px;
+}
+
+#contact h2{
+  font-size: 60px;
+}
+
+#contact p, #contact h2{
+  font-weight: lighter;
+}
+
+#contact h1, #contact .col-md-4{
+  color: rgb(8, 40, 69);
+}
+
+#contact .dl-horizontal dd {
+margin-left: 30px;
+}
+
+#contact .dl-horizontal dt{
+  width: auto;
+}
+
+.contact-form {
+  padding-left: 40px;
+}
+
+
+#map{
+  border:3px solid white;
+}
+
+footer{
+  background-color: rgb(8, 40, 69);
+  color: #fff;
+  text-align: center;
+}
+
+footer img{
+  padding-top: 30px;
+  width: 60px;
+}
+
+/* End of Footer*/
+
+/* Start of Project Summary */
+#project-summary{
+    background-color: #28426D;
+}
+
+#project-summary .container{
+  max-width: 960px;
+}
+
+#project-summary h1{
+  color: #fff;
+  padding: 50px;
+}
+
+.porject-more-butten{
+  font-size: 30px;
+  width: 100%;
+  color: #fff;
+  background-color: #28426D;
+  border-color: #fff; 
+  border: solid 3px;
+  opacity: 0.2;
+  margin: 60px 0px 90px 0px;
+}
+
+.porject-more-butten:hover{
+  color: #fff;
+  background-color: #28426D;
+  border-color: #fff; 
+  opacity: 1;
+}
+
+/* End of Project Summary*/
+
+/* Start of Project Detail */
+#projects .row{
+  margin-bottom: 30px;
+}
+
+#projects h3{
+  margin: 0;
+  padding: 0;
+  color: rgb(8, 40, 69);
+}
+.project-secondary-text p{
+padding: 40px;
+}
+
+/* Start of Project Detail */

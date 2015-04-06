@@ -1,9 +1,49 @@
 <div id="home">
-  <div id="intro"></div>
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Weather Bar-->
+      <weather-bar></weather-bar>
+
+      <!--Logo-->
+      <div class="logo">
+        <center><img src="/static/img/logo.jpg" alt="logo"><h3 class="text">Roofing & Waterprofing</h3></center>
+      </div>
+      <!--End Logo-->
+
+      <!-- Carousel -->
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" style="margin:auto;">
+		        <div class="carousel-caption">
+		          <h1>{{slide.title}}</h1>
+		          <p>{{slide.detail}}</p>
+		        </div>
+		      </slide>
+		    </carousel>
   <div id="services">
     <div class="text-center">service summary</div>
   </div>
-  <div id="projects">
-    <div class="text-center">project summary</div>
+  <div class="container-fluid" id="project-summary">
+  <div class="container">
+    <h1 class="text-center">Project summary</h1>
+    <div class="row">
+      <div class="col-sm-6 col-md-4" ng-repeat="project in projectHighlight">           
+           <img class="img-responsive" src="{{project.img0}}" alt="project image">
+        <div class="thumbnail">
+        <div class="caption">       
+          <blockquote>
+            <h4>{{project.title}}<h4>
+            <h5>{{project.service}}</h5>
+          </blockquote>       
+      
+          <a ui-sref="root.projects.detail({projectId: project.projectId})" class="btn btn-helios" role="button">Project Detials</a> 
+          <a href="#" ng-click="openServiceModal('touchOn')"><img class="thumbnail-icon" src="/static/img/services/Repair_and_Maintenance.png" alt="services icon"></a>
+        </div><!--.caption-->
+        </div><!-- thumbnail-->
+      </div><!-- col-sm-6 col-md-4-->
+    </div>
   </div>
+</div>
 </div>
