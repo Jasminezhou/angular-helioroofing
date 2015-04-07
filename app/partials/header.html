@@ -20,6 +20,11 @@
                     <li ng-class="{'active': $state.includes('root.projects')}"><a ui-sref="root.projects.summary">Projects</a></li>
                     <li><a scroll-to="contact" offset="50">Contact</a></li>
                 </ul>
+                <div class="btn-group pull-right">
+                    <label class="btn btn-primary btn-sm" ng-model="language" btn-radio="'en'">English</label>
+                    <label class="btn btn-primary btn-sm" ng-model="language" btn-radio="'zhs'">简体中文</label>
+                    <label class="btn btn-primary btn-sm" ng-model="language" btn-radio="'zht'">繁體中文</label>
+                </div>
             </nav>
             <nav class="visible-xs" collapse="!isCollapsed">
                 <ul class="nav navbar-nav">

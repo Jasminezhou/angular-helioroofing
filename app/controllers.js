@@ -1,9 +1,11 @@
-angular.module('starterApp.controllers', ['starterApp.services'])
+angular.module('heliosApp.controllers', ['heliosApp.services'])
 
-.controller('RootCtrl', function($scope, $modal, SiteContent){
-    $scope.currentService = {
-        name: 'rootService'
-    };
+.controller('RootCtrl', function($scope, $rootScope, $modal, SiteContent){
+  // Language settings
+    $scope.language = 'en';
+    $scope.$watch('language', function(newVal){
+        $rootScope.$broadcast('languageChanged', newVal);
+    })
 
     $scope.openServiceModal = function (serviceId) {
 
@@ -36,10 +38,14 @@ angular.module('starterApp.controllers', ['starterApp.services'])
 
 .controller('HeaderCtrl', function($scope){})
 .controller('FooterCtrl', function($scope){})
-.controller('HomeCtrl', function($scope, scrollServices, SiteContent){
+.controller('HomeCtrl', function($scope, $rootScope, scrollServices, SiteContent){
+    $scope.language = 'en';
     scrollServices.scrollTop();
     $scope.slides = SiteContent.slides;
     $scope.projectHighlight = SiteContent.projectHighlight;
+    $rootScope.$on('languageChanged', function(event, data){
+      $scope.language = data;
+    })
 })
 .controller('ServicesCtrl', function($scope, scrollServices, SiteContent){
     $scope.services = SiteContent.services;

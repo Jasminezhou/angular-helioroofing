@@ -17,8 +17,8 @@
 		      <slide ng-repeat="slide in slides" active="slide.active">
 		        <img ng-src="{{slide.image}}" style="margin:auto;">
 		        <div class="carousel-caption">
-		          <h1>{{slide.title}}</h1>
-		          <p>{{slide.detail}}</p>
+		          <h1>{{slide.title | translate: this}}</h1>
+		          <p>{{slide.detail | translate: this}}</p>
 		        </div>
 		      </slide>
 		    </carousel>
