@@ -89,8 +89,8 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
                     controller: 'ProjectDetailCtrl'
                 }
             }
-        })
+        });
     }
   ]
-)
+);
 

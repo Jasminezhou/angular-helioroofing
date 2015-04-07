@@ -47,16 +47,16 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
 .controller('FooterCtrl', function($scope){})
 .controller('HomeCtrl', function($scope, $rootScope, $localStorage, scrollServices, SiteContent){
     $scope.language = $localStorage.language;
-    scrollServices.scrollTop();
     $scope.slides = SiteContent.slides;
     $scope.projectHighlight = SiteContent.projectHighlight;
     $rootScope.$on('languageChanged', function(event, data){
       $scope.language = data;
     });
+    scrollServices.scrollTop();
 })
 .controller('ServicesCtrl', function($scope, scrollServices, SiteContent){
-    $scope.services = SiteContent.services;
-    scrollServices.scrollTop();
+  $scope.services = SiteContent.services;
+  scrollServices.scrollTop();
 })
 .controller('ProjectsCtrl', function($scope, scrollServices, SiteContent){
     $scope.projectSummary = SiteContent.projectSummary;

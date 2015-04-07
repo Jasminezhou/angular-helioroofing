@@ -3,9 +3,9 @@ angular.module('heliosApp.services', [])
 .service('scrollServices', function(smoothScroll){
     return {
         scrollTop: function(){
-            smoothScroll(document.getElementById('top'), {offset: 50});
+          smoothScroll(document.getElementById('top'), {offset: 50});
         }
-    }
+    };
 })
 
 .factory('SiteContent', function(){
@@ -125,11 +125,11 @@ angular.module('heliosApp.services', [])
             'img5': '/static/img/projects/Helios_projects_BridgeportRoadRichmond7.jpg',
             'img6': '/static/img/projects/Helios_projects_BridgeportRoadRichmond1.jpg',
         },
-    }
+    };
     return {
         slides: slides,
         services: services,
-        serviceDetail: function(serviceId){return servicesMap[serviceId]},
+        serviceDetail: function(serviceId){return servicesMap[serviceId];},
         projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
           var summary = projectsMap[projectId];
           summary.projectId = projectId;
@@ -140,7 +140,7 @@ angular.module('heliosApp.services', [])
           summary.projectId = projectId;
           return summary;
         }),
-        projectDetail: function(projectId){return projectsMap[projectId]}
-    }
-})
+        projectDetail: function(projectId){return projectsMap[projectId];}
+    };
+});
 
