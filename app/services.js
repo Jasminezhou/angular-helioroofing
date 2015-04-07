@@ -13,7 +13,7 @@ angular.module('heliosApp.services', [])
       {
         image: '/static/img/projects/Helios_projects_Liquid Urethane Membrane6.jpg',
         title: {
-            en: 'Protect your home is our top priority', 
+            en: 'Protect your home is our top priority',
             zhs: '我们以保护您的房屋为己任',
             zht: '我們以保護您的房屋為己任',
         },
@@ -34,7 +34,7 @@ angular.module('heliosApp.services', [])
             en: 'When you work with our Expert Roofers, Helios committed to finding the best roofing solution for your needs.',
             zhs: 'Helios屋顶公司承诺会提供最适合您的解决方案',
             zht: 'Helios屋頂公司承諾會提供最適合您的解決方案'
-        }    
+        }
       },
       {
         image: '/static/img/projects/Helios_projects_BridgeportRoadRichmond1.jpg',
@@ -63,7 +63,7 @@ angular.module('heliosApp.services', [])
 
     var servicesMap = {
       touchOn: {
-        name: 'Touch-On Roofing', 
+        name: 'Touch-On Roofing',
         detail: 'this is a great service of Touch-On Roofing...',
         icon: '/static/img/services/Torch-On_Roofing.png',
         img: '/static/img/services/Torch-On%20Roofing.jpg'
@@ -128,6 +128,7 @@ angular.module('heliosApp.services', [])
     }
     return {
         slides: slides,
+        services: services,
         serviceDetail: function(serviceId){return servicesMap[serviceId]},
         projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
           var summary = projectsMap[projectId];

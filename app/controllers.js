@@ -1,11 +1,18 @@
 angular.module('heliosApp.controllers', ['heliosApp.services'])
 
-.controller('RootCtrl', function($scope, $rootScope, $modal, SiteContent){
+.controller('RootCtrl', function($scope, $rootScope, $modal, $localStorage, SiteContent){
+  // Site default settings
+  $localStorage.$default({
+    language: 'en',
+  });
   // Language settings
-    $scope.language = 'en';
-    $scope.$watch('language', function(newVal){
+    $scope.language = $localStorage.language;
+    $scope.$watch('language', function(newVal, oldVal){
+      if (newVal !== oldVal) {
+        $localStorage.language = newVal;
         $rootScope.$broadcast('languageChanged', newVal);
-    })
+      }
+    });
 
     $scope.openServiceModal = function (serviceId) {
 
@@ -38,14 +45,14 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
 
 .controller('HeaderCtrl', function($scope){})
 .controller('FooterCtrl', function($scope){})
-.controller('HomeCtrl', function($scope, $rootScope, scrollServices, SiteContent){
-    $scope.language = 'en';
+.controller('HomeCtrl', function($scope, $rootScope, $localStorage, scrollServices, SiteContent){
+    $scope.language = $localStorage.language;
     scrollServices.scrollTop();
     $scope.slides = SiteContent.slides;
     $scope.projectHighlight = SiteContent.projectHighlight;
     $rootScope.$on('languageChanged', function(event, data){
       $scope.language = data;
-    })
+    });
 })
 .controller('ServicesCtrl', function($scope, scrollServices, SiteContent){
     $scope.services = SiteContent.services;
@@ -55,7 +62,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     $scope.projectSummary = SiteContent.projectSummary;
     scrollServices.scrollTop();
     // TODO: to be deleted, just for Jasmine
-    $scope.openServiceModal('touchOn');
+    //$scope.openServiceModal('touchOn');
 })
 
 .controller('ProjectDetailCtrl', function($scope, $state, scrollServices, SiteContent){
@@ -65,5 +72,5 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
 })
 
 .controller('ChatCtrl', function($scope){
-    
-})
+
+});

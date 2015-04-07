@@ -3,11 +3,11 @@ angular.module('heliosApp.directives', [])
 .directive('weatherBar', function($http){
     return {
         restrict: 'E',
-        template: '<div id="weatherBar">' + 
+        template: '<div id="weatherBar">' +
                     '<table class="table table-bordered">' +
                       '<tbody>' +
                         '<tr id="dates"><th ng-repeat="date in dates">{{date[0]}}</br><span class="date">{{date[1]}}</span></th></tr>' +
-                        '<tr id="weather"> <th ng-repeat="weather in weathers track by $index"><img src="{{weather}}"></th></tr>' +
+                        '<tr id="weather"> <th ng-repeat="weather in weathers track by $index"><img ng-src="{{weather}}"></th></tr>' +
                         '<tr id="services"> <td ng-repeat="service in services track by $index" colspan={{service[0]}} class="project_service {{service[1]}}">{{service[2]}}</td></tr>' +
                       '</tbody>' +
                     '</table>' +
