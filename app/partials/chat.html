@@ -1,17 +1,59 @@
 <div id="chat-box" class="panel panel-primary col-lg-3 col-md-4 col-sm-6 col-xs-12" outline="0" style="right: 15px; position: fixed; z-index: 99999; float: right; bottom:0; padding:0;">
   <div class="panel-heading" style="width: 100%;">
-    <span>Chat Now</span><span class="close glyphicon glyphicon-remove pull-right" ng-click="isCollapsed = !isCollapsed"></span>
-    <span class="open pull-right glyphicon glyphicon-minus"></span>
+    <span>Chat Now</span>
+    <span class="close glyphicon glyphicon-remove pull-right" ng-show="isCollapsed" ng-click="isCollapsed = !isCollapsed"></span>
+    <span class="open pull-right glyphicon glyphicon-minus" ng-hide="isCollapsed" ng-click="isCollapsed = !isCollapsed"></span>
   </div>
-  <div ng-show="isCollapsed">
+  <div ng-show="isCollapsed" class="chat-body">
     <div class="row expert">
       <img class="col-xs-4" alt="our expert" src="http://placehold.it/50x50">
       <div class="col-xs-8"><h3>John Doe</h3><p>Our Expert</p></div>
     </div>
     <div class="panel-body">
-      <ul class="chat" style="width: 100%; height: 200px">
-        
-      </ul>
+      <div ng-repeat="message in messages" class="message-wrapper">
+      
+                  <div ng-if="user._id !== message.userId">
+                      
+                    <img class="profile-pic left" 
+                          ng-src="{{toUser.pic}}" onerror="onProfilePicError(this)" />
+      
+                      <div class="chat-bubble left">
+      
+                          <div class="message" ng-bind-html="message.text | nl2br" autolinker>
+                          </div>
+      
+                          <div class="message-detail">
+                              <span ng-click="viewProfile(message)" 
+                                  class="bold">{{toUser.username}}</span>,
+                              <span am-time-ago="message.date"></span>
+                          </div>
+      
+                      </div>
+                  </div>
+      
+                  <div ng-if="user._id === message.userId">
+                    
+                       <img class="profile-pic right" 
+                          ng-src="{{user.pic}}" onerror="onProfilePicError(this)" />
+                    
+                      <div class="chat-bubble right">
+      
+                          <div class="message" ng-bind-html="message.text | nl2br" autolinker>
+                          </div>
+      
+                          <div class="message-detail">
+                              <span ng-click="viewProfile(message)" 
+                                  class="bold">{{user.username}}</span>, 
+                              <span am-time-ago="message.date"></span>
+                          </div>
+      
+                      </div>
+                    
+                  </div>
+      
+                  <div class="cf"></div>
+      
+              </div>
     </div>
     <div class="panel-footer">
       <div class="input-group" style="max-width: 270px;">

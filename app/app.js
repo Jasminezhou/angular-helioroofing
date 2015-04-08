@@ -1,4 +1,4 @@
-angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngStorage', 'heliosApp.controllers', 'heliosApp.directives', 'heliosApp.filters'])
+angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngStorage', 'ngSanitize', 'heliosApp.controllers', 'heliosApp.directives', 'heliosApp.filters'])
 
 .run(
   [          '$rootScope', '$state', '$stateParams',
