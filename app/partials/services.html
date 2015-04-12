@@ -1,14 +1,36 @@
-<div class="container-fluid" id="services">
+<div class="container-fluid" id="services" ng-style="{'background-image': categoryCfg.backgroundImg}">
+  <div class="container">
+
   <div class="row">
-    <div class="col-sm-6 col-md-3" ng-repeat="service in services">
+    <h1 class="text-center">Our services</h1>
+    <p class="about col-md-12">Nam et augue ut purus tempor vestibulum. Pellentesque auctor finibus turpis ac pharetra. Duis libero eros, mattis ut mattis eu, consectetur tempor sapien. Cras volutpat vulputate nulla non laoreet. Fusce ut est magna. Praesent vel est vel ante tempus volutpat. </p>
+  </div>
+
+
+<div class="row categories text-center">
+    <div class="col-md-6 col-xs-6">
+      <a class="btn btn-block" ng-class="{current: category == 'commercial'}" ui-sref="root.services({category: 'commercial'})">Commercial</a>
+    </div>
+
+        <div class="col-md-6 col-xs-6">
+      <a class="btn btn-block" ng-class="{current: category == 'residential'}" ui-sref="root.services({category: 'residential'})">Residential</a>
+    </div>
+
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-xs-6 col-md-4 col-sm-4" ng-repeat="service in services">
       <div class="thumbnail">
-        <img src="http://placehold.it/350x350" alt="...">
-        <div class="caption">
-          <h3>{{service.name}}</h3>
-          <p>{{service.detail}}</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        <img src="/static/img/services/Build-in_Gutters.png" alt="services icon">
+        <div class="caption text-center">
+          <h5>{{service.name}}</h5>
+          <p class="hidden-xs">{{service.detail}}</p>
+          <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button" ng-click="openServiceModal('touchOn')">More Detial</a></p>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>

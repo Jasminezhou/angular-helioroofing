@@ -226,31 +226,44 @@ border: none;
 }
 
 /* Start of Footer */
-#contact {
-  color: #fff;
-  background-image:url('/static/img/map.jpg');
-  background-color: rgb(48, 124, 156);
-  min-height: 700px;
-  background-repeat:no-repeat;
-  background-position:center; 
+#contact{
+  color: #28426D;
+}
+
+#contact .bg{
+  /*color: rgb(8, 40, 69); 
+  background-image: url("/static/img/map.jpg");
+  background-position: center;
+  height: 100px;*/
+  background-image: url("/static/img/map.jpg");
+  height: 300px;
+}
+
+#contact .phone-number{
+  background-color: #fff;
+}
+
+#contact .row{
+  margin-bottom: 60px;
 }
 
 #contact h1{
   font-weight: normal;
-  padding: 30px;
+  padding: 60px 0px 0px 0px;
+}
+
+#contact h5{
+  margin-bottom: 0px;
 }
 
 
 #contact p, #contact h2{
-  font-weight: lighter;
+  font-weight: 200;
 }
 
-#contact h1, #contact .col-md-4{
-  color: rgb(8, 40, 69);
-}
 
 #contact .dl-horizontal dd {
-margin-left: 30px;
+margin-left: 0;
 }
 
 #contact .dl-horizontal dt{
@@ -261,10 +274,6 @@ margin-left: 30px;
   padding-left: 40px;
 }
 
-
-#map{
-  border:3px solid white;
-}
 
 footer{
   background-color: rgb(8, 40, 69);
@@ -282,6 +291,11 @@ footer img{
 /* Start of Project Summary */
 #project-summary{
     background-color: #28426D;
+}
+
+#project-summary blockquote{
+  height: 80px;
+  overflow: hidden;
 }
 
 #project-summary .container{
@@ -313,9 +327,117 @@ footer img{
 
 /* End of Project Summary*/
 
+
+
+/* Start of Services page */
+#services{
+  color: #fff;
+  /*background-image: url("http://www.wallpapersdesign.net/wp-content/uploads/2013/06/Usa-New-York-City-Buildings-Rockefeller-Center.jpg");*/
+  background-repeat: no-repeat;
+  background-size:cover;
+  /*background-color:rgb(230,230,230); 
+  background-image: url("/static/img/bg.jpg");*/
+}
+
+#services .container{
+  max-width: 900px;
+}
+#services .thumbnail{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.75);
+    -webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+            transition: 0.3s;
+  /*background-color:#fff; 
+    background-size: 150px 150px;
+  background-position:center bottom;*/
+}
+#services p{
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+#services h1{
+  padding-top: 60px;
+}
+
+#services .about{
+  margin-bottom: 60px;
+}
+
+#services .thumbnail img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 5px solid #135081;
+  box-shadow: 0 0 0 3px #135081;
+  border-radius: 50%;
+  -webkit-transition: border 0.3s;
+     -moz-transition: border 0.3s;
+          transition: border 0.3s;
+}
+
+#services .thumbnail:hover{
+  background-color: rgba(255, 255, 255, 1);
+
+}
+
+#services .thumbnail:hover img{
+  border: 5px solid #fff;
+}
+
+#services .categories{
+  margin-bottom: 60px;
+}
+
+#services .categories img{
+  max-width: 30px;
+}
+
+
+#services .categories .btn{
+  background: #fff;
+  color: #28426D;
+  opacity: 0.7;
+  padding: 10px;
+}
+
+
+#services .categories .btn:hover{
+  opacity:1;
+}
+
+#services .categories .btn.current {
+  background-color: #28426D;
+  color: #fff;
+}
+
+#services .detial-btn{
+  color: #28426D;
+  padding: 5px 15px;
+  margin: 15px;
+  border: 1px solid #28426D;
+  background: #fff;
+  opacity: 0.6;
+}
+
+#services .detial-btn:hover{
+  opacity: 1;
+}
+
+
+/* End of Services*/
+
 /* Start of Project Detail */
 #projects .row{
   margin-bottom: 30px;
+}
+
+#projects .btn-helios{
+  opacity: 0.4;
+}
+
+#projects .more-projects-btn{
+  margin-bottom: 180px;
 }
 
 #projects h3{

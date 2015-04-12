@@ -54,7 +54,12 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     });
     scrollServices.scrollTop();
 })
-.controller('ServicesCtrl', function($scope, scrollServices, SiteContent){
+.controller('ServicesCtrl', function($scope, $state, scrollServices, SiteContent){
+  $scope.category = $state.params.category;
+  if (!$scope.category || ['residential', 'commercial'].indexOf($scope.category) < 0) {
+    $state.go('root.services', {category: 'commercial'});
+  }
+  $scope.categoryCfg = SiteContent.serviceCategories[$scope.category];
   $scope.services = SiteContent.services;
   scrollServices.scrollTop();
 })

@@ -59,7 +59,7 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
         })
         // Services
         .state('root.services', {
-            url: '/services',
+            url: '/services/:category',
             views: {
                 'master@root': {
                     templateUrl: 'app/partials/services.html',

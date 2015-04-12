@@ -50,15 +50,30 @@ angular.module('heliosApp.services', [])
         }
       },
     ];
+
+    var serviceCategories = {
+      commercial: {
+        backgroundImg: 'url(http://www.wallpapersdesign.net/wp-content/uploads/2013/06/Usa-New-York-City-Buildings-Rockefeller-Center.jpg)', 
+      },
+      residential: {
+        backgroundImg: 'url(http://upload.wikimedia.org/wikipedia/commons/5/5d/Colorful_row_of_houses.jpg)',
+      }
+    };
+
     var services = [
-        {name: 'Service 1', detail: 'this is a great service...'},
-        {name: 'Service 2', detail: 'this is a great service...'},
-        {name: 'Service 3', detail: 'this is a great service...'},
-        {name: 'Service 4', detail: 'this is a great service...'},
-        {name: 'Service 5', detail: 'this is a great service...'},
-        {name: 'Service 6', detail: 'this is a great service...'},
-        {name: 'Service 7', detail: 'this is a great service...'},
-        {name: 'Service 8', detail: 'this is a great service...'},
+        {name: 'Service 01', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 02', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 03', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 04', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 05', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 06', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 07', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 08', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 09', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 10', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 11', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+        {name: 'Service 12', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
+    
     ];
 
     var servicesMap = {
@@ -129,6 +144,7 @@ angular.module('heliosApp.services', [])
     return {
         slides: slides,
         services: services,
+        serviceCategories: serviceCategories,
         serviceDetail: function(serviceId){return servicesMap[serviceId];},
         projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
           var summary = projectsMap[projectId];
