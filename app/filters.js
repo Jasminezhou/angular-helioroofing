@@ -18,12 +18,24 @@ angular.module('heliosApp.filters', [])
     projects: {
       zhs: '项目',
       zht: '工程項目'
+    },
+    'our services': {
+      zhs: '我们的服务',
+      zht: '服務項目'
+    },
+    commercial: {
+      zhs: '商业',
+      zht: '商業'
+    },
+    residential: {
+      zhs: '民居',
+      zht: '民居'
     }
   };
 	return function(input, scope) {
 
 		return input[scope.language] ||
-            translation[input.toLowerCase()][scope.language] ||
+            typeof(input) === 'string' && translation[input.toLowerCase()][scope.language] ||
             input.en ||
             input;
 	};

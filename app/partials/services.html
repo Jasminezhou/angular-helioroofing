@@ -2,18 +2,18 @@
   <div class="container">
 
   <div class="row">
-    <h1 class="text-center">Our services</h1>
-    <p class="about col-md-12">Nam et augue ut purus tempor vestibulum. Pellentesque auctor finibus turpis ac pharetra. Duis libero eros, mattis ut mattis eu, consectetur tempor sapien. Cras volutpat vulputate nulla non laoreet. Fusce ut est magna. Praesent vel est vel ante tempus volutpat. </p>
+    <h1 class="text-center">{{'Our Services' | translate: this}}</h1>
+    <p class="about col-md-12">{{categoryCfg.summary | translate: this}}</p>
   </div>
 
 
 <div class="row categories text-center">
     <div class="col-md-6 col-xs-6">
-      <a class="btn btn-block" ng-class="{current: category == 'commercial'}" ui-sref="root.services({category: 'commercial'})">Commercial</a>
+      <a class="btn btn-block" ng-class="{current: category == 'commercial'}" ui-sref="root.services({category: 'commercial'})">{{'Commercial' | translate: this}}</a>
     </div>
 
         <div class="col-md-6 col-xs-6">
-      <a class="btn btn-block" ng-class="{current: category == 'residential'}" ui-sref="root.services({category: 'residential'})">Residential</a>
+      <a class="btn btn-block" ng-class="{current: category == 'residential'}" ui-sref="root.services({category: 'residential'})">{{'Residential' | translate: this}}</a>
     </div>
 
   </div>
@@ -22,12 +22,12 @@
 
   <div class="row">
     <div class="col-xs-6 col-md-4 col-sm-4" ng-repeat="service in services">
-      <div class="thumbnail">
-        <img src="/static/img/services/Build-in_Gutters.png" alt="services icon">
+      <div class="thumbnail" ng-click="openServiceModal('touchOn')">
+        <img ng-src="{{service.icon}}" alt="services icon">
         <div class="caption text-center">
-          <h5>{{service.name}}</h5>
-          <p class="hidden-xs">{{service.detail}}</p>
-          <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button" ng-click="openServiceModal('touchOn')">More Detial</a></p>
+          <h5>{{service.name | translate: this}}</h5>
+          <p class="service-summary hidden-xs">{{service.detail | translate: this}}</p>
+          <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">More Detial</a></p>
         </div>
       </div>
     </div>

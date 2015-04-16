@@ -54,14 +54,18 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     });
     scrollServices.scrollTop();
 })
-.controller('ServicesCtrl', function($scope, $state, scrollServices, SiteContent){
+.controller('ServicesCtrl', function($scope, $rootScope, $localStorage, $state, scrollServices, SiteContent){
+  $scope.language = $localStorage.language;
   $scope.category = $state.params.category;
   if (!$scope.category || ['residential', 'commercial'].indexOf($scope.category) < 0) {
     $state.go('root.services', {category: 'commercial'});
   }
   $scope.categoryCfg = SiteContent.serviceCategories[$scope.category];
-  $scope.services = SiteContent.services;
+  $scope.services = SiteContent.services($scope.category);
   scrollServices.scrollTop();
+  $rootScope.$on('languageChanged', function(event, data){
+      $scope.language = data;
+    });
 })
 .controller('ProjectsCtrl', function($scope, scrollServices, SiteContent){
     $scope.projectSummary = SiteContent.projectSummary;

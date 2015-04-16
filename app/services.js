@@ -53,27 +53,168 @@ angular.module('heliosApp.services', [])
 
     var serviceCategories = {
       commercial: {
+        summary: {
+          en: 'We have strong experience in building and reparing commercial roofing system in Great Vancouver.',
+          zhs: '我们在大温哥华地区有丰富的商业屋顶修建经验，建立了良好的口碑。',
+          zht: '我們在大溫哥華地區有豐富的商業屋頂修建經驗，建立了良好的口碑。'
+        },
         backgroundImg: 'url(http://www.wallpapersdesign.net/wp-content/uploads/2013/06/Usa-New-York-City-Buildings-Rockefeller-Center.jpg)', 
       },
       residential: {
-        backgroundImg: 'url(http://upload.wikimedia.org/wikipedia/commons/5/5d/Colorful_row_of_houses.jpg)',
+        summary: {
+          en: 'From apartment to single home, we have helped more than 100 families with better roofing system.',
+          zhs: '从西温海岸到枫树岭，我们的足迹遍布大温，为超过100个家庭安装维修了放心、耐用、实惠的屋顶系统。用我们的专业和细心，换您每一天的安心和放心！',
+          zht: '從西溫海岸到楓樹嶺，我們的足跡遍布大溫，為超過100個家庭安裝維修了放心、耐用、實惠的屋頂系統。用我們的專業和細心，換您每一天的安心和放心！'
+        },
+        backgroundImg: 'url(http://i1.wp.com/www.hfroofingcontractor.com/wp-content/uploads/2014/12/row-house.jpg)',
       }
     };
 
     var services = [
-        {name: 'Service 01', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 02', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 03', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 04', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 05', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 06', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 07', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 08', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 09', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 10', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 11', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-        {name: 'Service 12', detail: 'This is a great service text holder. Vid volutpat nisi placerat id felis velante sit amet justo. Namplacerat id felis vel a cursus mi. Sed placerat id felis vel semper. placerat id felis vel.'},
-    
+        {
+          code: 'torchOn',
+          icon: '/static/img/services/Torch-On_Roofing.png',
+          name: {
+            en: 'Torch-On Roofing',
+            zhs: '烫胶屋顶',
+            zht: '烫胶屋顶'
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.',
+            zhs: '一种塑胶底的防水屋顶。跟沥青片和瓦片不同的地方在于他的安装。这种屋顶是烧上去的，不是钉上去或卡上去的。如果屋顶是平顶的，这可能是最好的屋顶材质选项',
+            zht: '一種塑膠底的防水屋頂。跟瀝青片和瓦片不同的地方在於他的安裝。這種屋頂是燒上去的，不是釘上去或卡上去的。如果屋頂是平頂的，這可能是最好的屋頂材質選項.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'singlePly',
+          icon: '/static/img/services/Single-Ply_Roofing.png',
+          name: {
+            en: 'Single-Ply Roofing',
+            zhs: '单层屋面',
+            zht: '單層屋面'
+          }, 
+          detail: {
+            en: 'Single ply roof systems provide strength, flexibility, and long-lasting durability. The inherent advantages of pre-fabricated sheets are the consistency of the quality of the products that are manufactured, the versatility in their attachment methods, and therefore, their broader applicability.',
+            zhs: '单层屋顶是合成材料生产的柔性片材。提供坚固、灵活和持久的耐用性。',
+            zht: '單層屋頂是合成材料生產的柔性片材，提供堅固，靈活和持久的耐用性。'
+          },
+          category: ['commercial'],
+        },
+        {
+          code: 'inverted',
+          icon: '/static/img/services/Inverted_Roofing.png',
+          name: {
+            en: 'Inverted Roofing',
+            zhs: '倒置式屋面系统',
+            zht: '倒置式屋面系统'
+          }, 
+          detail: {
+            en: 'In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.',
+            zhs: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉',
+            zht: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'green',
+          icon: '/static/img/services/Skylight_Installation_and_Repair_for_Low_slope_Roofs.png',
+          name: {
+            en: 'Green Roof system',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'touchOnLowSlope',
+          icon: '/static/img/services/Torch-on_Roofing_for_Low_slope_Roofs.png',
+          name: {
+            en: 'Torch-On Roofing for Low Slope Roofs',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'singlePlyLowSlope',
+          icon: '/static/img/services/Single-Ply_Roofing_for_Low_slope_Roofs.png',
+          name: {
+            en: 'Single-Ply Roofing for Low Slope Roofs',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'ventilation',
+          icon: '/static/img/services/Single-Ply_Roofing_for_Low_slope_Roofs.png',
+          name: {
+            en: 'Ventilation',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'skyline',
+          icon: '/static/img/services/Skylight_Installation_and_Repairs.png',
+          name: {
+            en: 'Skyline Installation and Repair',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'insulation',
+          icon: '/static/img/services/Insulation.png',
+          name: {
+            en: 'Insulation',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'flashing',
+          icon: '/static/img/services/Flashing.png',
+          name: {
+            en: 'Flashing',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'gutters',
+          icon: '/static/img/services/Build-in_Gutters.png',
+          name: {
+            en: 'Build-in Gutters',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['residential'],
+        },
+        {
+          code: 'maintenance',
+          icon: '/static/img/services/Repair_and_Maintenance.png',
+          name: {
+            en: 'General repair and maintenance',
+          }, 
+          detail: {
+            en: 'We help you to install and maintain this type of roof.'
+          },
+          category: ['commercial', 'residential'],
+        },
     ];
 
     var servicesMap = {
@@ -143,7 +284,11 @@ angular.module('heliosApp.services', [])
     };
     return {
         slides: slides,
-        services: services,
+        services: function(category){
+          return services.filter(function(s){
+            return s.category.indexOf(category) >= 0;
+          });
+        },
         serviceCategories: serviceCategories,
         serviceDetail: function(serviceId){return servicesMap[serviceId];},
         projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){

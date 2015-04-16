@@ -363,6 +363,8 @@ footer img{
 
 #services .about{
   margin-bottom: 60px;
+  margin-top: 10px;
+  font-size: 1.5em;
 }
 
 #services .thumbnail img{
@@ -409,6 +411,15 @@ footer img{
 #services .categories .btn.current {
   background-color: #28426D;
   color: #fff;
+}
+
+#services .thumbnail .caption {
+  height: 230px;
+}
+
+#services .service-summary {
+  height: 80px;
+  overflow-y: scroll;
 }
 
 #services .detial-btn{
