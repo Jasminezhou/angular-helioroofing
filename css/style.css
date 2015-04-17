@@ -253,11 +253,11 @@ border: none;
 }
 
 #contact h5{
-  margin-bottom: 0px;
+  color: #fff;
 }
 
 
-#contact p, #contact h2{
+#contact p{
   font-weight: 200;
 }
 
@@ -274,6 +274,25 @@ margin-left: 0;
   padding-left: 40px;
 }
 
+#contact_1 h2{
+  margin: 0px;
+}
+
+#contact_1{
+  margin-bottom: 60px;
+}
+
+.contact-ways{
+  background-color: rgb(40, 66, 109);
+}
+
+.contact-ways p{
+  color: #fff;
+}
+
+.contact-ways{
+  margin-bottom: 0;
+}
 
 footer{
   background-color: rgb(8, 40, 69);
@@ -281,7 +300,9 @@ footer{
   text-align: center;
 }
 
-footer img{
+footer
+
+.blue-logo img{
   padding-top: 30px;
   width: 60px;
 }
