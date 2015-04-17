@@ -11,6 +11,7 @@
 }
 
 
+
 /* home page */
 .master {
     margin-top: 50px;
@@ -123,10 +124,6 @@ bottom: 100px;
   vertical-align: middle;
 }
 
-.carousel-inner .item {
-  height: 500px;
-}
-
 .carousel-inner img{
   -webkit-filter: contrast(1.8) grayscale(0.1) invert(0.2);
 }
@@ -152,17 +149,16 @@ background-color: rgba(255, 200, 67, 0.8);
 /* Sart of weather-bar*/
 
 #weatherBar {
-  position: absolute;
+  /*position: absolute;*/
+  width: 60%;
   z-index: 19;
-  background-color: black;
-  height: 145px;
-  left: 50%;
-  margin-left: -250px;
-  top: 730px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .table{
   color: white;
+  background-color: black;
 }
 
 th{
@@ -231,11 +227,7 @@ border: none;
 }
 
 #contact .bg{
-  /*color: rgb(8, 40, 69); 
-  height: 100px;
-  background-image: url("/static/img/map.jpg"); 
-  background-repeat: no-repeat;
-  width: 100%;*/
+  margin-bottom: 60px;
   background-size: 100%;
 }
 
@@ -244,7 +236,7 @@ border: none;
 }
 
 #contact .row{
-  margin-bottom: 60px;
+  margin: 0px 15px 60px 15px;
 }
 
 #contact h1{
@@ -283,16 +275,19 @@ margin-left: 0;
 }
 
 .contact-ways{
+  padding: 60px 0px 90px 0px;
   background-color: rgb(40, 66, 109);
-}
-
-.contact-ways p{
   color: #fff;
 }
 
-.contact-ways{
-  margin-bottom: 0;
+.contact-ways img{
+  width: 50px;
 }
+
+.contact-ways p{
+  font-weight: 100;
+}
+
 
 footer{
   background-color: rgb(8, 40, 69);
@@ -656,3 +651,34 @@ a.autolinker {
   font-size: 64px;
 }
 /* End of Chat Box*/
+
+
+
+@media (max-width: 767px) {
+
+  .table > tbody > tr > th{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .table > tbody > tr > td,.table>tbody>tr>th{
+    padding: 3px;
+    width: 50px;
+  }
+
+
+  #weatherBar{
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  th img{
+    width: 23px;
+  }
+
+
+}
+
+
+
