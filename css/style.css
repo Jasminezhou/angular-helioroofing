@@ -104,7 +104,7 @@ box-shadow: 0 0 9px 0 rgba(0,0,0,0.18);
 }
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-top: 70%;
+top: 50%;
 }
 
 .carousel-control.right, .carousel-control.left{
@@ -116,7 +116,7 @@ bottom: 100px;
 }
 
 .carousel-caption{
-  padding-bottom: 120px;
+  padding-bottom: 20%;
 }
 
 .carousel-caption .glyphicon{
@@ -126,6 +126,10 @@ bottom: 100px;
 
 .carousel-inner img{
   -webkit-filter: contrast(1.8) grayscale(0.1) invert(0.2);
+}
+
+.carousel-inner > .item > img{
+  width: 100%;
 }
 
 .carousel-inner h1{
@@ -149,9 +153,10 @@ background-color: rgba(255, 200, 67, 0.8);
 /* Sart of weather-bar*/
 
 #weatherBar {
-  /*position: absolute;*/
-  width: 60%;
+  position: relative;
+  width: 50%;
   z-index: 19;
+  margin-top: -100px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -295,7 +300,13 @@ footer{
   text-align: center;
 }
 
-footer
+.blue-logo{
+  opacity: 0.4;
+}
+
+.blue-logo p{
+  font-size: 10px;
+}
 
 .blue-logo img{
   padding-top: 30px;
@@ -671,11 +682,28 @@ a.autolinker {
     width: 100%;
     left: 0;
     margin-left: 0;
+    margin-top: 0;
   }
 
   th img{
     width: 23px;
   }
+
+  .carousel-inner p{
+  display: none;
+  }
+
+  .carousel-caption {
+  padding-bottom: 0;
+  }
+
+  .carousel-indicators li{
+  display: none;
+  }
+
+  .contact-ways div{
+  margin-bottom: 90px;
+}
 
 
 }
