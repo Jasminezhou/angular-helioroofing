@@ -8,7 +8,7 @@ angular.module('heliosApp.directives', [])
                       '<tbody>' +
                         '<tr id="dates"><th ng-repeat="date in dates">{{date[0]}}</br><span class="date">{{date[1]}}</span></th></tr>' +
                         '<tr id="weather"> <th ng-repeat="weather in weathers track by $index"><img ng-src="{{weather}}"></th></tr>' +
-                        '<tr id="services"> <td ng-repeat="service in services track by $index" colspan={{service[0]}} class="project_service {{service[1]}}">{{service[2]}}</td></tr>' +
+                        '<tr id="services"> <td ng-repeat="service in services track by $index" colspan={{service[0]}} class="project_service {{service[1]}}"><a ui-sref="root.services">{{service[2]}}</a></td></tr>' +
                       '</tbody>' +
                     '</table>' +
                   '</div>',

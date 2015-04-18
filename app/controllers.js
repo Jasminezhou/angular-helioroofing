@@ -19,12 +19,21 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
         var modalInstance = $modal.open({
           templateUrl: '/app/partials/service_detail.html',
           controller: 'ServiceModalInstanceCtrl',
-          size: 'lg',
+          //size: 'lg',
           resolve: {
             service: function () {
               return SiteContent.serviceDetail(serviceId);
             }
           }
+        });
+      };
+
+      $scope.openEstimateModal = function () {
+
+        var modalInstance = $modal.open({
+          templateUrl: '/app/partials/estimate_detail.html',
+          controller: 'EstimateModalInstanceCtrl',
+          //size: 'lg',
         });
       };
 })
@@ -41,6 +50,12 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
+})
+
+.controller('EstimateModalInstanceCtrl', function ($scope, $modalInstance) {
+  $scope.cancel = function() {
+    $modalInstance.dismiss('cancel');
+  }
 })
 
 .controller('HeaderCtrl', function($scope){})
@@ -79,7 +94,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     $scope.project = SiteContent.projectDetail(projectId);
     scrollServices.scrollTop();
 })
-
+/*
 .controller('ChatCtrl', function($scope, $timeout, $localStorage, MockService){
       // mock acquiring data via $stateParams
     $scope.toUser = {
@@ -122,6 +137,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
         startChat();
       }
     })
+*/    
 /*
     $scope.$on('$ionicView.leave', function() {
       console.log('leaving UserMessages view, destroying interval');
@@ -138,6 +154,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
       }
     });
 */
+/*
     function getMessages() {
       // the service is mock but you would probably pass the toUser's GUID here
       MockService.getUserMessages({
@@ -190,3 +207,4 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     };
 
 });
+*/

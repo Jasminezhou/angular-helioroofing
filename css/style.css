@@ -313,6 +313,29 @@ footer{
   width: 60px;
 }
 
+#estimate-shortcut {
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(51, 122, 183, 0.5);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#estimate-shortcut:hover {
+  background-color: rgba(51, 122, 183, 1);
+}
+
+#estimate-shortcut .icon {
+  font-size: 25px;
+  color: #FFF;
+}
+
 /* End of Footer*/
 
 /* Start of Project Summary */
@@ -354,6 +377,15 @@ footer{
 
 /* End of Project Summary*/
 
+
+/* Start of Service Summary */
+#service-summary {
+  background-color: lightseagreen;
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
+/* End of Service Summary*/
 
 
 /* Start of Services page */
@@ -490,6 +522,7 @@ padding: 40px;
 /* Start of Project Detail */
 
 /* Start of Chat Box */
+/*
 #chat-box .panel-body {
   width: 100%; 
   height: 150px;
@@ -624,8 +657,9 @@ a.autolinker {
   color: #3b88c3;
   text-decoration: none;
 }
-
+*/
 /* loading */
+/*
 .loader-center {
   height: 100%;
   display: -webkit-box;
@@ -661,8 +695,13 @@ a.autolinker {
 .loader .ion-loading-c {
   font-size: 64px;
 }
+*/
 /* End of Chat Box*/
 
+
+.modal-dialog .detial-img{
+  width: 100%;
+}
 
 
 @media (max-width: 767px) {

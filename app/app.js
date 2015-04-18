@@ -38,7 +38,8 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
                     controller: 'RootCtrl'
                 },
                 'footer': {
-                    templateUrl: 'app/partials/footer.html'
+                    templateUrl: 'app/partials/footer.html',
+                    controller: 'RootCtrl'
                 },
                 'chat': {
                     templateUrl: 'app/partials/chat.html',
