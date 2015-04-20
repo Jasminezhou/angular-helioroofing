@@ -19,7 +19,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
         var modalInstance = $modal.open({
           templateUrl: '/app/partials/service_detail.html',
           controller: 'ServiceModalInstanceCtrl',
-          //size: 'lg',
+          size: 'lg',
           resolve: {
             service: function () {
               return SiteContent.serviceDetail(serviceId);

@@ -701,6 +701,47 @@ a.autolinker {
 
 .modal-dialog .detial-img{
   width: 100%;
+  padding: 15px 0px;
+}
+
+button.close{
+  padding: 0px 6px;
+}
+
+.servrice-icon{
+  padding: 6px;
+  background: rgb(23, 64, 106);
+  margin-left: 15px;
+  width: 60px;
+}
+
+.modal-content{
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.modal-dialog .row{
+  background: #fff;
+  margin-right: 0;
+}
+
+.modal-title{
+  margin-top:50px;
+}
+
+.modal-content button{
+  float: right;
+  margin-top: 15px;
+}
+
+.modal-content .col-md-1, .modal-content .col-md-7, .modal-content .col-md-4{
+  padding: 0px 15px 0px 15px;
+}
+
+.modal-content p{
+  padding: 15px 30px 0px 0px;
 }
 
 

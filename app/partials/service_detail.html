@@ -1,17 +1,24 @@
-	<button type="button" class="close" ng-click="cancel()">&times;</button> 
 <div class="row service-detial">
 
-<div class="col-md-6 col-sm-4">    
-    <img class="detial-img" ng-src="{{service.img}}">
+	<div class="col-md-1">
+		<img class="servrice-icon" ng-src="{{service.icon}}"> 
+	</div>
+
+		
+	<div class="col-md-7"> 
+		<h4 class="text-center modal-title">{{service.name}}</h4>  
+	    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	    </p>
+	</div>
+
+
+	<div class="col-md-4">    
+	    <img class="detial-img" ng-src="{{service.img}}">
+	</div>
+	
+
 </div>
 
 
-<div class="col-md-6 col-sm-6">
- 
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-    <img ng-src="{{service.icon}}">
-	<h3 class="text-center modal-title">{{service.name}}</h3>  
-    <p>{{service.detail}}</p>
-</div>
-
-</div>
