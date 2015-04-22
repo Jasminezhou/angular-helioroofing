@@ -150,7 +150,7 @@ color: #fff;
 background-color: rgba(255, 200, 67, 0.8);
 }
 
-/* Sart of weather-bar*/
+/* Start of weather-bar*/
 
 #weatherBar {
   position: relative;
@@ -161,37 +161,47 @@ background-color: rgba(255, 200, 67, 0.8);
   margin-left: auto;
 }
 
-.table{
+#weatherBar .table{
   color: white;
   background-color: black;
 }
 
-th{
+#weatherBar th{
   text-align: center;
   font-size: smaller;
 }
 
-th img{
+#weatherBar th img{
   width: 34px;
   margin-top: -7px;
 }
 
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+#weatherBar td {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#weatherBar td:hover {
+  color: #0e83cd;
+  background: #fff;
+}
+
+#weatherBar .table>thead>tr>th, #weatherBar .table>tbody>tr>th, #weatherBar .table>tfoot>tr>th, #weatherBar .table>thead>tr>td, #weatherBar .table>tbody>tr>td, #weatherBar .table>tfoot>tr>td {
 padding-top: 11px;
 border-top: none;
 width: 70px;
 vertical-align: middle;
 }
 
-.table-bordered, .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+#weatherBar .table-bordered, #weatherBar .table-bordered>thead>tr>th, #weatherBar .table-bordered>tbody>tr>th, #weatherBar .table-bordered>tfoot>tr>th, #weatherBar .table-bordered>thead>tr>td, #weatherBar .table-bordered>tbody>tr>td, #weatherBar .table-bordered>tfoot>tr>td {
 border: none;
 }
 
-.date{
+#weatherBar .date{
   font-weight: 100;
 }
 
-.project_service{
+#weatherBar .project_service{
   text-align: center;
   font-size: 15px;
   font-weight: bold;
@@ -199,18 +209,18 @@ border: none;
   color: black;
 }
 
-.roof_repair{
+#weatherBar .roof_repair{
   background-color: #6DADC9;
 }
 
-.gutter_fix{
+#weatherBar .gutter_fix{
   background-color: #ADCEE1;
 }
-.inspection {
+#weatherBar .inspection {
   background-color: #AEBCCE
 }
 
-.default_service{
+#weatherBar .default_service{
   background-color: antiquewhite;
 }
 
@@ -380,9 +390,8 @@ footer{
 
 /* Start of Service Summary */
 #service-summary {
-  background-color: lightseagreen;
   margin-top: -70px;
-  padding-top: 70px;
+  /*padding-top: 70px;*/
 }
 
 /* End of Service Summary*/
@@ -496,6 +505,7 @@ footer{
 
 
 /* End of Services*/
+
 
 /* Start of Project Detail */
 #projects .row{
@@ -698,7 +708,7 @@ a.autolinker {
 */
 /* End of Chat Box*/
 
-
+/*Start of Servrice detials*/
 .modal-dialog .detial-img{
   width: 100%;
   padding: 15px 0px;
@@ -734,6 +744,7 @@ button.close{
 .modal-content button{
   float: right;
   margin-top: 15px;
+  margin-bottom: 60px;
 }
 
 .modal-content .col-md-1, .modal-content .col-md-7, .modal-content .col-md-4{
@@ -743,6 +754,27 @@ button.close{
 .modal-content p{
   padding: 15px 30px 0px 0px;
 }
+/*End of Servrice detials*/
+
+
+
+
+
+/*Start of Free estimate form*/
+.estimate-header{
+  color: #fff;
+}
+
+.form-control{
+  border-radius: 0;
+}
+
+/*End of Free estimate form*/
+
+
+
+
+
 
 
 @media (max-width: 767px) {

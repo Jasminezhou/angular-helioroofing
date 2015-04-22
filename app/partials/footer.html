@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row text-center">  
-          <h1>Contact Us</h1>
+          <h1>{{'Contact Us' | translate: this}}</h1>
           <p>We'd love to answer any questions you may have. Please feel free to call us, send us an email, or meet us for coffee.</br>
             We look forward to working with you.</p>  
         </div>
@@ -36,7 +36,7 @@
 
     <div class="row">
       <div class="col-md-offset-4 col-md-4">       
-        <a class="btn btn-helios btn-block" role="button" ng-click="openEstimateModal()">Get Free Estimate</a> 
+        <a class="btn btn-helios btn-block" role="button" ng-click="openEstimateModal()">{{'Free Estimate' | translate: this}}</a> 
       </div>
     </div>
 </div><!-- #contact -->
@@ -46,7 +46,7 @@
 
           <div class="col-md-offset-1 col-md-2">
             <img src="/static/img/location.png">
-            <h5>Address</h5>
+            <h5>{{'Address' | translate: this}}</h5>
             <p>200-5050 Kingsway
               </br>Burnaby BC, Canada
               </br>V5H 4H2 
@@ -55,20 +55,20 @@
 
           <div class="col-md-2">
             <img src="/static/img/email.png">
-            <h5>Email</h5>
+            <h5>{{'Email' | translate: this}}</h5>
             <p>info@heliosroofing.com</p>                                          
           </div>
 
 
           <div class="col-md-2">
             <img src="/static/img/fax.png">
-            <h5>Fax</h5>
+            <h5>{{'Fax' | translate: this}}</h5>
             <p>604-288-1070</p>                 
           </div>
 
           <div class="col-md-2">
             <img src="/static/img/hours.png">
-            <h5>Office Hours</h5>
+            <h5>{{'Office Hours' | translate: this}}</h5>
             <p>Monday - Friday</br>
               9:00am - 17:00pm
             </p>                                 
@@ -77,7 +77,7 @@
 
           <div class="col-md-2">
             <img src="/static/img/24hrs.png">
-            <h5>Emergence Service</h5>
+            <h5>{{'Emergence Service' | translate: this}}</h5>
             <p>Monday - Sunday 24 Hrs
             </p>                 
           </div>
@@ -94,10 +94,10 @@
 
       <div class="blue-logo">
         <img src="/static/img/icon-bottom.jpg">
-        <p>© 2014 Helios Roofing and Waterproofing LTD.</p>
+        <p>© 2015 Helios Roofing and Waterproofing LTD.</p>
       </div>
 
-      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p class="pull-right"><a ng-click="scrollToTop()">Back to top</a></p>
   </div>
 
 

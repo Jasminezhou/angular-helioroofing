@@ -1,6 +1,6 @@
 angular.module('heliosApp.controllers', ['heliosApp.services'])
 
-.controller('RootCtrl', function($scope, $rootScope, $modal, $localStorage, SiteContent){
+.controller('RootCtrl', function($scope, $rootScope, $modal, $localStorage, SiteContent, scrollServices){
   // Site default settings
   $localStorage.$default({
     language: 'en',
@@ -13,29 +13,36 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
         $rootScope.$broadcast('languageChanged', newVal);
       }
     });
+    $rootScope.$on('languageChanged', function(event, data){
+      $scope.language = data;
+    });
 
     $scope.openServiceModal = function (serviceId) {
 
-        var modalInstance = $modal.open({
-          templateUrl: '/app/partials/service_detail.html',
-          controller: 'ServiceModalInstanceCtrl',
-          size: 'lg',
-          resolve: {
-            service: function () {
-              return SiteContent.serviceDetail(serviceId);
-            }
+      var modalInstance = $modal.open({
+        templateUrl: '/app/partials/service_detail.html',
+        controller: 'ServiceModalInstanceCtrl',
+        size: 'lg',
+        resolve: {
+          service: function () {
+            return SiteContent.serviceDetail(serviceId);
           }
-        });
-      };
+        }
+      });
+    };
 
-      $scope.openEstimateModal = function () {
+    $rootScope.openEstimateModal = function () {
 
-        var modalInstance = $modal.open({
-          templateUrl: '/app/partials/estimate_detail.html',
-          controller: 'EstimateModalInstanceCtrl',
-          //size: 'lg',
-        });
-      };
+      var modalInstance = $modal.open({
+        templateUrl: '/app/partials/estimate_detail.html',
+        controller: 'EstimateModalInstanceCtrl',
+        size: 'lg',
+      });
+    };
+
+    $scope.scrollToTop = function(){
+      scrollServices.scrollTop();
+    }
 })
 
 .controller('ServiceModalInstanceCtrl', function ($scope, $modalInstance, service) {

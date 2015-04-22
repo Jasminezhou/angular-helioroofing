@@ -20,20 +20,47 @@
 		        </div>
 		      </slide>
 		    </carousel>
+    </div> <!--End of Carousel -->
 
-            <!-- Weather Bar-->
+      <!-- Weather Bar-->
       <weather-bar></weather-bar>
+
       <div class="container-fluid" id="service-summary">
+      <!--
         <div class="container">
-          <h1 class="text-center">Service summary</h1>
+          <h1 class="text-center">Our Services</h1>
           <div class="row">
-            
+            <div class="col-md-offset-2 col-md-8">
+              <p>We are roofing contractor who is offer a total roofing, reroofing, waterproofing and repair service on all roof system, we are willing to take up any challenges to get the job done right. We work on commercial, and residential projects, satisfying the needs of owners and managers alike.</p>
+            </div>   
           </div>
         </div>
       </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-md-4 col-sm-4">
+              <div class="thumbnail" ng-click="openServiceModal('touchOn')">
+                <img class="img-responsive" src="/static/img/services/Build-in_Gutters.png" alt="services icon">
+                <div class="caption text-center">
+                  <h5>{{service.name | translate: this}}</h5>
+                  <p class="service-summary hidden-xs">{{service.detail | translate: this}}</p>
+                  <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">More Detial</a></p>
+                </div>
+              </div>
+            </div>
+
+  
+          </div>
+      -->
+        </div>
+
+
+
+
       <div class="container-fluid" id="project-summary">
         <div class="container">
-          <h1 class="text-center">Project summary</h1>
+          <h1 class="text-center">{{'Project summary' | translate: this}}</h1>
           <div class="row">
             <div class="col-sm-6 col-md-4" ng-repeat="project in projectHighlight">           
                  <img class="img-responsive" ng-src="{{project.img0}}" alt="project image">

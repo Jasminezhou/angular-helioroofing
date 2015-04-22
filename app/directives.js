@@ -1,14 +1,14 @@
 angular.module('heliosApp.directives', [])
 
-.directive('weatherBar', function($http){
+.directive('weatherBar', function($http, $rootScope, $localStorage, $state){
     return {
         restrict: 'E',
         template: '<div id="weatherBar">' +
                     '<table class="table table-bordered">' +
                       '<tbody>' +
-                        '<tr id="dates"><th ng-repeat="date in dates">{{date[0]}}</br><span class="date">{{date[1]}}</span></th></tr>' +
+                        '<tr id="dates"><th ng-repeat="date in dates">{{date[0] | translate: this}}</br><span class="date">{{date[1]}}</span></th></tr>' +
                         '<tr id="weather"> <th ng-repeat="weather in weathers track by $index"><img ng-src="{{weather}}"></th></tr>' +
-                        '<tr id="services"> <td ng-repeat="service in services track by $index" colspan={{service[0]}} class="project_service {{service[1]}}"><a ui-sref="root.services">{{service[2]}}</a></td></tr>' +
+                        '<tr id="services"> <td ng-repeat="service in services track by $index" colspan={{service[0]}} class="project_service {{service[1]}}" ng-click="serviceHandler(service[1])">{{service[2] | translate: this}}</td></tr>' +
                       '</tbody>' +
                     '</table>' +
                   '</div>',
@@ -33,6 +33,7 @@ angular.module('heliosApp.directives', [])
            *]
            *
            * */
+          scope.language = $localStorage.language;
           scope.dates = [];
           scope.weathers = [];
           scope.services = [];
@@ -47,10 +48,17 @@ angular.module('heliosApp.directives', [])
             "default_service": 1
           };
           var service_name = {
-            'roof_repair': "Repairing Roof",
-            'gutter_fix': "Gutter Maintenance",
-            'inspection': "Project Inspection",
-            'default_service': "Repair and Maintenance"
+            'roof_repair': {en: "Repairing Roof", zhs: '屋顶重装或大修', zht: '屋頂重裝或大修'},
+            'gutter_fix': {en: "Gutter Maintenance", zhs: '排水沟修护', zht: '排水溝修護'},
+            'inspection': {en: "Project Inspection", zhs: '免费咨询', zht: '免費諮詢'},
+            'default_service': {en: "Repair and Maintenance", zhs: '日常维修', zht: '日常維修'}
+          };
+          scope.serviceHandler = function(s){
+            if (s === 'inspection') {
+              $rootScope.openEstimateModal();
+            } else {
+              $state.go('root.services');
+            }
           };
 
           $http.get( "http://jingweather.appspot.com/api/helios")
@@ -75,6 +83,10 @@ angular.module('heliosApp.directives', [])
                   }
                 });
 
+          });
+
+          $rootScope.$on('languageChanged', function(event, data){
+            scope.language = data;
           });
         }
     }
