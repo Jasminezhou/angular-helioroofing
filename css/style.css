@@ -38,6 +38,20 @@
   border-color: #28426D; 
 }
 
+.btn-helios-dark {
+  color: #fff;
+  background-color: #28426D;
+  border-color: #fff; 
+  border: solid 3px;
+}
+
+.btn-helios-dark:hover{
+  color: #28426D;
+  background-color: #fff;
+  border-color: #fff; 
+}
+
+
 .btn, .thumbnail{
   border-radius: 0;
 }
@@ -346,11 +360,29 @@ footer{
   color: #FFF;
 }
 
+.estimate-branding{
+  background: #fff;
+  padding: 30px 5px;
+}
+
+.estimate-branding-row{
+  border-top: 5px solid rgb(246, 227, 74);
+}
+
 /* End of Footer*/
 
 /* Start of Project Summary */
 #project-summary{
     background-color: #28426D;
+}
+
+.project-summary-btn-row{
+  margin: 60px 15px 60px 15px;
+  opacity: 0.5;
+}
+
+.project-summary-btn-row:hover{
+  opacity: 1;
 }
 
 #project-summary blockquote{
@@ -390,8 +422,20 @@ footer{
 
 /* Start of Service Summary */
 #service-summary {
-  margin-top: -70px;
-  /*padding-top: 70px;*/
+  margin-top: 120px;
+}
+
+#service-summary .about{
+  margin-bottom: 90px;
+}
+
+.service-summary-btn-row{
+  margin: 60px 15px 60px 15px;
+  opacity: 0.5;
+}
+
+.service-summary-btn-row:hover{
+  opacity: 1;
 }
 
 /* End of Service Summary*/
@@ -400,17 +444,14 @@ footer{
 /* Start of Services page */
 #services{
   color: #fff;
-  /*background-image: url("http://www.wallpapersdesign.net/wp-content/uploads/2013/06/Usa-New-York-City-Buildings-Rockefeller-Center.jpg");*/
   background-repeat: no-repeat;
   background-size:cover;
-  /*background-color:rgb(230,230,230); 
-  background-image: url("/static/img/bg.jpg");*/
-}
+ }
 
 #services .container{
   max-width: 900px;
 }
-#services .thumbnail{
+#services .thumbnail, #service-summary .thumbnail{
   border: none;
   background-color: rgba(255, 255, 255, 0.75);
     -webkit-transition: 0.3s;
@@ -420,7 +461,7 @@ footer{
     background-size: 150px 150px;
   background-position:center bottom;*/
 }
-#services p{
+#services p, #service-summary p{
   font-size: 12px;
   opacity: 0.7;
 }
@@ -435,7 +476,7 @@ footer{
   font-size: 1.5em;
 }
 
-#services .thumbnail img{
+#services .thumbnail img, #service-summary .thumbnail img{
   margin-top: 30px;
   margin-bottom: 30px;
   border: 5px solid #135081;
@@ -446,12 +487,17 @@ footer{
           transition: border 0.3s;
 }
 
-#services .thumbnail:hover{
+#services .thumbnail:hover, #service-summary .thumbnail:hover{
   background-color: rgba(255, 255, 255, 1);
 
 }
 
-#services .thumbnail:hover img{
+#service-summary .thumbnail:hover{
+  background-color: rgba(23, 64, 106, 0.25)
+
+}
+
+#services .thumbnail:hover img, #service-summary .thumbnail:hover img{
   border: 5px solid #fff;
 }
 
@@ -485,12 +531,12 @@ footer{
   height: 230px;
 }
 
-#services .service-summary {
+#services .service-summary, #service-summary .service-summary {
   height: 80px;
   overflow-y: scroll;
 }
 
-#services .detial-btn{
+#services .detial-btn, #service-summary .detial-btn{
   color: #28426D;
   padding: 5px 15px;
   margin: 15px;

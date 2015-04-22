@@ -25,34 +25,69 @@
       <!-- Weather Bar-->
       <weather-bar></weather-bar>
 
-      <div class="container-fluid" id="service-summary">
-      <!--
-        <div class="container">
-          <h1 class="text-center">Our Services</h1>
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-              <p>We are roofing contractor who is offer a total roofing, reroofing, waterproofing and repair service on all roof system, we are willing to take up any challenges to get the job done right. We work on commercial, and residential projects, satisfying the needs of owners and managers alike.</p>
-            </div>   
-          </div>
-        </div>
-      </div>
 
-        <div class="container">
+        <div class="container" id="service-summary">
           <div class="row">
-            <div class="col-xs-6 col-md-4 col-sm-4">
+            <h1 class="text-center">Our Main Services</h1>
+            <div class="about col-md-offset-2 col-md-8">
+            <p>We are roofing contractor who is offer a total roofing, reroofing, waterproofing and repair service on all roof system, we are willing to take up any challenges to get the job done right. We work on commercial, and residential projects, satisfying the needs of owners and managers alike.</p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xs-6 col-md-3 col-sm-4">
               <div class="thumbnail" ng-click="openServiceModal('touchOn')">
-                <img class="img-responsive" src="/static/img/services/Build-in_Gutters.png" alt="services icon">
+                <img class="img-responsive" src="/static/img/services/Torch-On_Roofing.png" alt="services icon">
                 <div class="caption text-center">
-                  <h5>{{service.name | translate: this}}</h5>
-                  <p class="service-summary hidden-xs">{{service.detail | translate: this}}</p>
+                  <h5>Torch-On</h5>
+                  <p class="service-summary hidden-xs">We help you to install and maintain this type of roof.</p>
                   <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">More Detial</a></p>
                 </div>
               </div>
             </div>
 
-  
+            <div class="col-xs-6 col-md-3 col-sm-4">
+              <div class="thumbnail" ng-click="openServiceModal('touchOn')">
+                <img class="img-responsive" src="/static/img/services/Single-Ply_Roofing.png" alt="services icon">
+                <div class="caption text-center">
+                  <h5>Single-Ply Roofing</h5>
+                  <p class="service-summary hidden-xs">Single ply roof systems provide strength, flexibility, and long-lasting durability. The inherent advantages of pre-fabricated sheets are the consistency of the quality of the products that are manufactured, the versatility in their attachment methods, and therefore, their broader applicability.</p>
+                  <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">More Detial</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3 col-sm-4">
+              <div class="thumbnail" ng-click="openServiceModal('touchOn')">
+                <img class="img-responsive" src="static/img/services/Inverted_Roofing.png" alt="services icon">
+                <div class="caption text-center">
+                  <h5>Inverted Roofing</h5>
+                  <p class="service-summary hidden-xs">In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.</p>
+                  <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">More Detial</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3 col-sm-4">
+              <div class="thumbnail" ng-click="openServiceModal('touchOn')">
+                <img class="img-responsive" src="static/img/services/Inverted_Roofing.png" alt="services icon">
+                <div class="caption text-center">
+                  <h5>Inverted Roofing</h5>
+                  <p class="service-summary hidden-xs">In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.</p>
+                  <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">More Detial</a></p>
+                </div>
+              </div>
+            </div>
+
           </div>
-      -->
+
+
+                <div class="service-summary-btn-row row">
+                  <div class="col-md-offset-4 col-md-4">       
+                    <a class="btn btn-helios btn-block" role="button">Shaw All Servrices</a> 
+                  </div>
+                </div>
         </div>
 
 
@@ -76,7 +111,12 @@
               </div><!--.caption-->
               </div><!-- thumbnail-->
             </div><!-- col-sm-6 col-md-4-->
-          </div>
+          </div><!--row-->
         </div>
+            <div class="project-summary-btn-row row">
+             <div class="col-md-offset-4 col-md-4">       
+               <a class="btn btn-helios-dark btn-block" role="button">Shaw All Projects</a> 
+             </div>
+          </div>
       </div>
 </div>
