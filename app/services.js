@@ -74,6 +74,7 @@ angular.module('heliosApp.services', [])
         {
           code: 'torchOn',
           icon: '/static/img/services/Torch-On_Roofing.png',
+          img: '/static/img/services/Torch-On_Roofing.jpg',
           name: {
             en: 'Torch-On Roofing',
             zhs: '烫胶屋顶',
@@ -120,21 +121,29 @@ angular.module('heliosApp.services', [])
           code: 'green',
           icon: '/static/img/services/Skylight_Installation_and_Repair_for_Low_slope_Roofs.png',
           name: {
-            en: 'Green Roof system',
+            en: 'Green roof',
+            zhs: '绿化屋顶',
+            zht: '綠化屋頂',
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'A green roof or living roof is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane.',
+            zhs: '绿化屋顶是指在天台或屋顶上大规模栽种植物, 从而吸收热能，有助散热，调节雨水流量。',
+            zht: '綠化屋頂是指在天台或屋頂上大規模栽種植物, 从而吸收熱能，有助散熱，調節雨水流量。',
           },
           category: ['commercial', 'residential'],
         },
         {
-          code: 'touchOnLowSlope',
+          code: 'torchOnLowSlope',
           icon: '/static/img/services/Torch-on_Roofing_for_Low_slope_Roofs.png',
           name: {
             en: 'Torch-On Roofing for Low Slope Roofs',
+            zhs: '烫胶平顶屋顶',
+            zht: '燙膠平頂屋頂'
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'We help you to install and maintain this type of roof.',
+            zhs: '一种塑胶底的防水屋顶。跟沥青片和瓦片不同的地方在于他的安装。这种屋顶是烧上去的，不是钉上去或卡上去的。如果屋顶是平顶的，这可能是最好的屋顶材质选项',
+            zht: '一種塑膠底的防水屋頂。跟瀝青片和瓦片不同的地方在於他的安裝。這種屋頂是燒上去的，不是釘上去或卡上去的。如果屋頂是平頂的，這可能是最好的屋頂材質選項.'
           },
           category: ['commercial', 'residential'],
         },
@@ -143,53 +152,77 @@ angular.module('heliosApp.services', [])
           icon: '/static/img/services/Single-Ply_Roofing_for_Low_slope_Roofs.png',
           name: {
             en: 'Single-Ply Roofing for Low Slope Roofs',
+            zhs: '单层平顶屋面',
+            zht: '單層平頂屋面'
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'Single ply roof systems provide strength, flexibility, and long-lasting durability. The inherent advantages of pre-fabricated sheets are the consistency of the quality of the products that are manufactured, the versatility in their attachment methods, and therefore, their broader applicability.',
+            zhs: '单层屋顶是合成材料生产的柔性片材。提供坚固、灵活和持久的耐用性。',
+            zht: '單層屋頂是合成材料生產的柔性片材，提供堅固，靈活和持久的耐用性。'
           },
           category: ['commercial', 'residential'],
         },
         {
           code: 'ventilation',
-          icon: '/static/img/services/Single-Ply_Roofing_for_Low_slope_Roofs.png',
+          icon: '/static/img/services/Ventilation.png',
+          img: '/static/img/services/Ventilation.jpg',
           name: {
             en: 'Ventilation',
+            zhs: '通风',
+            zht: '通風',
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'We install and maintain ventilation system to keep fresh air indoor all the time',
+            zhs: '安装维护屋顶通风设备，保持室内空气清新。',
+            zht: '安裝維護屋頂通風設備，保持室內空氣清新。'
           },
           category: ['commercial', 'residential'],
         },
         {
           code: 'skyline',
           icon: '/static/img/services/Skylight_Installation_and_Repairs.png',
+          img: '/static/img/services/Skylight_Installation_and_Repairs.jpg',
           name: {
             en: 'Skyline Installation and Repair',
+            zhs: '天窗',
+            zht: '天窗'
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'Our skyline installation let you enjoy sunshine anywhere at home.',
+            zhs: '贴心设计安装天窗，让您尽情享受温哥华的温暖阳光。',
+            zht: '貼心設計安裝天窗，讓您盡情享受溫哥華的溫暖陽光。'
           },
           category: ['commercial', 'residential'],
         },
         {
           code: 'insulation',
           icon: '/static/img/services/Insulation.png',
+          img: '/static/img/services/Insulation.jpg',
           name: {
             en: 'Insulation',
+            zhs: '绝缘隔热',
+            zht: '絕緣隔熱',
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'Good insulation will keep the building warm in winter, save power and prevent from fire hazard.',
+            zhs: '良好的绝缘性将保持建筑物冬季保暖，节省电源和防止火灾的危险。',
+            zht: '良好的絕緣性將保持建築物冬季保暖，節省電源和防止火災的危險。'
           },
           category: ['commercial', 'residential'],
         },
         {
           code: 'flashing',
           icon: '/static/img/services/Flashing.png',
+          img: '/static/img/services/Flashing.jpg',
           name: {
             en: 'Flashing',
+            zhs: '屋顶风雨保护',
+            zht: '屋頂風雨保護'
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'Flashing refers to thin pieces of impervious material installed to prevent the passage of water into a structure from a joint or as part of a weather resistant barrier system.',
+            zhs: '我们帮助加固您的屋顶，确保抵御狂风暴雨的能力。',
+            zht: '我們幫助加固您的屋頂，確保抵禦狂風暴雨的能力。'
           },
           category: ['commercial', 'residential'],
         },
@@ -198,9 +231,13 @@ angular.module('heliosApp.services', [])
           icon: '/static/img/services/Build-in_Gutters.png',
           name: {
             en: 'Build-in Gutters',
+            zhs: '排水渠',
+            zht: '排水渠'
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: "The main purpose of a rain gutter is to protect a building's foundation by channeling water away from its base. ",
+            zhs: '屋顶排水沟就是在屋顶安装排水沟，使水经过排水头流入地下，不会对屋顶进行渗透。',
+            zht: '屋頂排水溝就是在屋頂​​安裝排水溝，使水經過排水頭流入地下，不會對屋頂進行滲透。'
           },
           category: ['residential'],
         },
@@ -209,24 +246,22 @@ angular.module('heliosApp.services', [])
           icon: '/static/img/services/Repair_and_Maintenance.png',
           name: {
             en: 'General repair and maintenance',
+            zhs: '日常维护及维修',
+            zht: '日常維護及維修'
           }, 
           detail: {
-            en: 'We help you to install and maintain this type of roof.'
+            en: 'We provides 24 x 7 support when you need us.',
+            zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
+            zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
           },
           category: ['commercial', 'residential'],
         },
     ];
 
-    var servicesMap = {
-      touchOn: {
-        name: 'Touch-On Roofing',
-        detail: 'this is a great service of Touch-On Roofing...',
-        icon: '/static/img/services/Torch-On_Roofing.png',
-        img: '/static/img/services/Torch-On%20Roofing.jpg'
-
-      },
-      service2: {name: 'Service 2', detail: 'this is a great service 2...'},
-    };
+    var servicesMap = services.reduce(function(o, v, i) {
+      o[v.code] = v;
+      return o;
+    }, {});
 
     var projectsMap = {
         'liquid': {
@@ -290,7 +325,12 @@ angular.module('heliosApp.services', [])
           });
         },
         serviceCategories: serviceCategories,
-        serviceDetail: function(serviceId){return servicesMap[serviceId];},
+        serviceHighlight: ['torchOn', 'skyline', 'insulation', 'ventilation'].map(function(serviceId){
+          return servicesMap[serviceId];
+        }),
+        serviceDetail: function(serviceId){
+          return servicesMap[serviceId];
+        },
         projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
           var summary = projectsMap[projectId];
           summary.projectId = projectId;
@@ -304,119 +344,4 @@ angular.module('heliosApp.services', [])
         projectDetail: function(projectId){return projectsMap[projectId];}
     };
 })
-
-.factory('MockService', ['$http', '$q',
-  function($http, $q) {
-    var me = {};
-
-    me.getUserMessages = function(d) {
-      /*
-      var endpoint =
-        'http://www.mocky.io/v2/547cf341501c337f0c9a63fd?callback=JSON_CALLBACK';
-      return $http.jsonp(endpoint).then(function(response) {
-        return response.data;
-      }, function(err) {
-        console.log('get user messages error, err: ' + JSON.stringify(
-          err, null, 2));
-      });
-      */
-      var deferred = $q.defer();
-      
-         setTimeout(function() {
-        deferred.resolve(getMockMessages());
-        }, 1500);
-      
-      return deferred.promise;
-    };
-
-    me.getMockMessage = function() {
-      return {
-        userId: '534b8e5aaa5e7afc1b23e69b',
-        date: new Date(),
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-      };
-    }
-
-    return me;
-  }
-])
-
-// fitlers
-.filter('nl2br', ['$filter',
-  function($filter) {
-    return function(data) {
-      if (!data) return data;
-      return data.replace(/\n\r?/g, '<br />');
-    };
-  }
-])
-
-// directives
-.directive('autolinker', ['$timeout',
-  function($timeout) {
-    return {
-      restrict: 'A',
-      link: function(scope, element, attrs) {
-        $timeout(function() {
-          var eleHtml = element.html();
-
-          if (eleHtml === '') {
-            return false;
-          }
-
-          var text = Autolinker.link(eleHtml, {
-            className: 'autolinker',
-            newWindow: false
-          });
-
-          element.html(text);
-
-          var autolinks = element[0].getElementsByClassName('autolinker');
-
-          for (var i = 0; i < autolinks.length; i++) {
-            angular.element(autolinks[i]).bind('click', function(e) {
-              var href = e.target.href;
-              console.log('autolinkClick, href: ' + href);
-
-              if (href) {
-                //window.open(href, '_system');
-                window.open(href, '_blank');
-              }
-
-              e.preventDefault();
-              return false;
-            });
-          }
-        }, 0);
-      }
-    }
-  }
-])
-
-function onProfilePicError(ele) {
-  this.ele.src = ''; // set a fallback
-}
-
-function getMockMessages() {
-  return {"messages":[{"_id":"535d625f898df4e80e2a125e","text":"Ionic has changed the game for hybrid app development.","userId":"534b8fb2aa5e7afc1b23e69c","date":"2014-04-27T20:02:39.082Z","read":true,"readDate":"2014-12-01T06:27:37.944Z"},{"_id":"535f13ffee3b2a68112b9fc0","text":"I like Ionic better than ice cream!","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-04-29T02:52:47.706Z","read":true,"readDate":"2014-12-01T06:27:37.944Z"},{"_id":"546a5843fd4c5d581efa263a","text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","userId":"534b8fb2aa5e7afc1b23e69c","date":"2014-11-17T20:19:15.289Z","read":true,"readDate":"2014-12-01T06:27:38.328Z"},{"_id":"54764399ab43d1d4113abfd1","text":"Am I dreaming?","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-11-26T21:18:17.591Z","read":true,"readDate":"2014-12-01T06:27:38.337Z"},{"_id":"547643aeab43d1d4113abfd2","text":"Is this magic?","userId":"534b8fb2aa5e7afc1b23e69c","date":"2014-11-26T21:18:38.549Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"},{"_id":"547815dbab43d1d4113abfef","text":"Gee wiz, this is something special.","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-11-28T06:27:40.001Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"},{"_id":"54781c69ab43d1d4113abff0","text":"I think I like Ionic more than I like ice cream!","userId":"534b8fb2aa5e7afc1b23e69c","date":"2014-11-28T06:55:37.350Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"},{"_id":"54781ca4ab43d1d4113abff1","text":"Yea, it's pretty sweet","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-11-28T06:56:36.472Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"},{"_id":"5478df86ab43d1d4113abff4","text":"Wow, this is really something huh?","userId":"534b8fb2aa5e7afc1b23e69c","date":"2014-11-28T20:48:06.572Z","read":true,"readDate":"2014-12-01T06:27:38.339Z"},{"_id":"54781ca4ab43d1d4113abff1","text":"Create amazing apps - ionicframework.com","userId":"534b8e5aaa5e7afc1b23e69b","date":"2014-11-29T06:56:36.472Z","read":true,"readDate":"2014-12-01T06:27:38.338Z"}],"unread":0};
-}
-
-// configure moment relative time
-moment.locale('en', {
-  relativeTime: {
-    future: "in %s",
-    past: "%s ago",
-    s: "%d sec",
-    m: "a minute",
-    mm: "%d minutes",
-    h: "an hour",
-    hh: "%d hours",
-    d: "a day",
-    dd: "%d days",
-    M: "a month",
-    MM: "%d months",
-    y: "a year",
-    yy: "%d years"
-  }
-});
 

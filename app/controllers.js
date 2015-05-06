@@ -45,10 +45,9 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     }
 })
 
-.controller('ServiceModalInstanceCtrl', function ($scope, $modalInstance, service) {
-
+.controller('ServiceModalInstanceCtrl', function ($scope, $rootScope, $localStorage, $modalInstance, service) {
+  $scope.language = $localStorage.language;
   $scope.service = service;
-
 /*
   $scope.ok = function () {
     $modalInstance.close($scope.selected.item);
@@ -57,12 +56,19 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
+  $rootScope.$on('languageChanged', function(event, data){
+    $scope.language = data;
+  });
 })
 
-.controller('EstimateModalInstanceCtrl', function ($scope, $modalInstance) {
+.controller('EstimateModalInstanceCtrl', function ($scope, $rootScope, $localStorage, $modalInstance) {
+  $scope.language = $localStorage.language;
   $scope.cancel = function() {
     $modalInstance.dismiss('cancel');
   }
+  $rootScope.$on('languageChanged', function(event, data){
+    $scope.language = data;
+  });
 })
 
 .controller('HeaderCtrl', function($scope){})
@@ -70,6 +76,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
 .controller('HomeCtrl', function($scope, $rootScope, $localStorage, scrollServices, SiteContent){
     $scope.language = $localStorage.language;
     $scope.slides = SiteContent.slides;
+    $scope.serviceHighlight = SiteContent.serviceHighlight;
     $scope.projectHighlight = SiteContent.projectHighlight;
     $rootScope.$on('languageChanged', function(event, data){
       $scope.language = data;

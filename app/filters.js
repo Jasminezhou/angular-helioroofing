@@ -90,6 +90,53 @@ angular.module('heliosApp.filters', [])
     'free estimate': {
       zhs: '免费评估',
       zht: '免費評估'
+    },
+    'more detail': {
+      zhs: '更多内容',
+      zht: '更多內容'
+    },
+    'all services': {
+      zhs: '所有服务',
+      zht: '所有服務'
+    },
+    'featured services': {
+      zhs: '精选服务',
+      zht: '精選服務'
+    },
+    'servicehighlight_detail': {
+      en: 'We are roofing contractor who is offer a total roofing, reroofing, waterproofing and repair service on all roof system, we are willing to take up any challenges to get the job done right. We work on commercial, and residential projects, satisfying the needs of owners and managers alike.',
+      zhs: '承接各种楼宇房屋及商业屋顶工程，包括屋顶设计施工、翻新、维修、防水等各式工程。我们用最专业的经验和技术，以人为本，为您打造最可靠放心、坚固耐用的各类屋顶。',
+      zht: '承接各種樓宇房屋及商業屋頂工程，包括屋頂設計施工、翻新、維修、防水等各式工程。我們用最專業的經驗和技術，以人為本，為您打造最可靠放心、堅固耐用的各類屋頂。'
+    },
+    'all projects': {
+      zhs: '更多工程',
+      zht: '更多工程'
+    },
+    'project type': {
+      zhs: '工程类型',
+      zht: '工程類型'
+    },
+    're-roofing': {
+      zhs: '屋顶重修',
+      zht: '屋頂重修'
+    },
+    'new roofing': {
+      zhs: '新装屋顶',
+      zht: '新裝屋頂'
+    },
+    'repair and maintenance': {
+      zhs: '维修维护',
+      zht: '維修維護'
+    },
+    'contactus_line1': {
+      en: "We'd love to answer any questions you may have. Please feel free to call us, send us an email, or meet us for coffee.",
+      zhs: '如果您有任何关于屋顶修建的问题，请随时联系我们。',
+      zht: '如果您有任何關於屋頂修建的問題，請隨時聯繫我們。'
+    },
+    'contactus_line2': {
+      en: 'We look forward to working with you.',
+      zhs: '欢迎来电、电邮或亲临参观',
+      zht: '歡迎來電、電郵或親臨參觀'
     }
   };
 	return function(input, scope) {
