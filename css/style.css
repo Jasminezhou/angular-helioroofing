@@ -1,3 +1,7 @@
+a {
+  cursor: pointer;
+}
+
 /* Fix ui-bootstrap nav menu */
 @media (max-width: 767px) {
 
@@ -293,6 +297,11 @@ margin-left: 0;
 
 .contact-form {
   padding-left: 40px;
+  padding-right: 40px;
+}
+
+.contact-form textarea {
+  max-width: 100%;
 }
 
 #contact_1 h2{
@@ -533,7 +542,7 @@ footer{
 
 #services .service-summary, #service-summary .service-summary {
   height: 80px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #services .detial-btn, #service-summary .detial-btn{

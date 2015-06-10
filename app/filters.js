@@ -128,6 +128,46 @@ angular.module('heliosApp.filters', [])
       zhs: '维修维护',
       zht: '維修維護'
     },
+    'existing and required system': {
+      zhs: '您的屋顶类型',
+      zht: '您的屋頂類型'
+    },
+    'sloped roofing': {
+      zhs: '斜面屋顶',
+      zht: '斜面屋頂'
+    },
+    'flat roofing': {
+      zhs: '平面屋顶',
+      zht: '平面屋頂'
+    },
+    'name': {
+      zhs: '称呼',
+      zht: '稱呼'
+    },
+    'phone number': {
+      zhs: '联系电话',
+      zht: '聯繫電話'
+    },
+    'phone': {
+      zhs: '联系电话',
+      zht: '聯繫電話'
+    },
+    'company name': {
+      zhs: '公司名称',
+      zht: '公司名稱'
+    },
+    'building name': {
+      zhs: '楼宇名称',
+      zht: '樓宇名稱'
+    },
+    'city': {
+      zhs: '所在城市',
+      zht: '所在城市'
+    },
+    'any further information': {
+      zhs: '附加信息',
+      zht: '附加信息'
+    },
     'contactus_line1': {
       en: "We'd love to answer any questions you may have. Please feel free to call us, send us an email, or meet us for coffee.",
       zhs: '如果您有任何关于屋顶修建的问题，请随时联系我们。',
@@ -142,7 +182,9 @@ angular.module('heliosApp.filters', [])
 	return function(input, scope) {
 
 		return input[scope.language] ||
-            typeof(input) === 'string' && translation[input.toLowerCase()][scope.language] ||
+            typeof(input) === 'string' &&
+            translation[input.toLowerCase()] && 
+            translation[input.toLowerCase()][scope.language] ||
             input.en ||
             input;
 	};

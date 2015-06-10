@@ -1,5 +1,5 @@
 	
-	<button type="button" class="estimate-close close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+	<button type="button" class="estimate-close close" ng-click="cancel()"><span aria-hidden="true">×</span></button>
 
 	<div class="estimate-header">
       <h4 class="modal-title" id="myModalLabel">{{'Free Estimate' | translate: this}}</h4>             
@@ -41,15 +41,15 @@
 
                     <!-- Multiple Radios -->
                     <div class="form-group">
-                      <label class="control-label" for="system">Existing and Required System</label>
+                      <label class="control-label" for="system">{{'Existing and Required System' | translate: this}}</label>
                       <div class="controls">
                         <div class="checkbox"><label class="" for="system-0">
                           <input type="radio" name="system" id="system-0" value="Flat Roofing" checked="checked">
-                          Flat Roofing
+                          {{'Flat Roofing' | translate: this}}
                         </label></div>
                         <div class="checkbox"><label class="" for="system-1">
                           <input type="radio" name="system" id="system-1" value="Sloped Roofing">
-                          Sloped Roofing
+                          {{'Sloped Roofing' | translate: this}}
                         </label></div>
                       </div>
                     </div>
@@ -57,7 +57,7 @@
                     <!-- Text input-->
                     <div class="form-group">
                       <div class="controls">
-                        <input id="contact_name" name="contact_name" type="text" placeholder="Name" class="input-xlarge form-control" required="">
+                        <input id="contact_name" name="contact_name" type="text" placeholder="{{'Name' | translate: this}}" class="input-xlarge form-control" required="">
                         
                       </div>
                     </div>
@@ -66,7 +66,7 @@
                     <!-- Text input-->
                     <div class="form-group">
                       <div class="controls">
-                        <input id="contact_phone" name="contact_phone" type="text" placeholder="Phone Number" class="input-xlarge form-control" required="">
+                        <input id="contact_phone" name="contact_phone" type="text" placeholder="{{'Phone Number' | translate: this}}" class="input-xlarge form-control" required="">
                         
                       </div>
                     </div>
@@ -74,7 +74,7 @@
                     <!-- Text input-->
                     <div class="form-group">
                       <div class="controls">
-                        <input id="contact_email" name="contact_email" type="text" placeholder="Email" class="input-xlarge form-control" required="">
+                        <input id="contact_email" name="contact_email" type="text" placeholder="{{'Email' | translate: this}}" class="input-xlarge form-control" required="">
                         
                       </div>
                     </div>
@@ -82,20 +82,20 @@
                     <!-- Text input-->
                     <div class="form-group">
                       <div class="controls">
-                        <input id="contact_company" name="contact_company" type="text" placeholder="Company Name" class="input-xlarge form-control" required="">    
+                        <input id="contact_company" name="contact_company" type="text" placeholder="{{'Company Name' | translate: this}}" class="input-xlarge form-control" required="">    
                       </div>
                     </div>
 
                     <!-- Text input-->
                     <div class="form-group">
                       <div class="controls">
-                        <input id="contact_building" name="contact_building" type="text" placeholder="Building Name" class="input-xlarge form-control">
+                        <input id="contact_building" name="contact_building" type="text" placeholder="{{'Building Name' | translate: this}}" class="input-xlarge form-control">
                       </div>
                     </div>
 
                     <!-- Text input-->
                     <div class="form-group">
-                      <label class="control-label" for="contact_city">City</label>
+                      <label class="control-label" for="contact_city">{{'City' | translate: this}}</label>
                       <div class="controls">
                         <select class="form-control">
 						  <option>VANCOUVER</option>
@@ -124,7 +124,7 @@
                     <!-- Text input-->
                     <div class="form-group">
                       <div class="controls">
-                        <input id="contact_street" name="contact_street" type="text" placeholder="Address" class="input-xlarge form-control">
+                        <input id="contact_street" name="contact_street" type="text" placeholder="{{'Address' | translate: this}}" class="input-xlarge form-control">
                         
                       </div>
                     </div>
@@ -133,7 +133,7 @@
 
                     <!-- Textarea -->
                     <div class="form-group">
-                      <label class="control-label" for="contact_more">Any further information</label>
+                      <label class="control-label" for="contact_more">{{'Any further information' | translate: this}}</label>
                       <div class="controls">                     
                         <textarea class="form-control" id="contact_more" name="contact_more"></textarea>
                       </div>
@@ -147,8 +147,8 @@
 
                 <div class="col-md-3">
                   <address>
-                    <strong>Email:</strong> <a href="mailto:info@heliosroofing.com"> info@heliosroofing.com</a><br><br>
-                    <strong>Phone:</strong> 604.783.6095 or 604.783.2806
+                    <strong>{{'Email' | translate: this}}:</strong> <a href="mailto:info@heliosroofing.com"> info@heliosroofing.com</a><br><br>
+                    <strong>{{'Phone'| translate: this}}:</strong> 604.783.6095 or 604.783.2806
                   </address>
 
                   

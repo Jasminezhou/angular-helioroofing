@@ -58,7 +58,7 @@ angular.module('heliosApp.services', [])
           zhs: '我们在大温哥华地区有丰富的商业屋顶修建经验，建立了良好的口碑。',
           zht: '我們在大溫哥華地區有豐富的商業屋頂修建經驗，建立了良好的口碑。'
         },
-        backgroundImg: 'url(http://www.wallpapersdesign.net/wp-content/uploads/2013/06/Usa-New-York-City-Buildings-Rockefeller-Center.jpg)', 
+        backgroundImg: 'url(/static/img/commercial-background.jpg)', 
       },
       residential: {
         summary: {
@@ -66,7 +66,7 @@ angular.module('heliosApp.services', [])
           zhs: '从西温海岸到枫树岭，我们的足迹遍布大温，为超过100个家庭安装维修了放心、耐用、实惠的屋顶系统。用我们的专业和细心，换您每一天的安心和放心！',
           zht: '從西溫海岸到楓樹嶺，我們的足跡遍布大溫，為超過100個家庭安裝維修了放心、耐用、實惠的屋頂系統。用我們的專業和細心，換您每一天的安心和放心！'
         },
-        backgroundImg: 'url(http://i1.wp.com/www.hfroofingcontractor.com/wp-content/uploads/2014/12/row-house.jpg)',
+        backgroundImg: 'url(/static/img/residential-background.jpg)',
       }
     };
 
