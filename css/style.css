@@ -326,6 +326,17 @@ margin-left: 0;
   font-weight: 100;
 }
 
+.contact-ways .clickable {
+  cursor: pointer;
+}
+
+.contact-ways a {
+  color: white;
+}
+
+.contact-ways a:hover {
+  color: white;
+}
 
 footer{
   background-color: rgb(8, 40, 69);

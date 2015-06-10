@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-offset-2 col-md-4">
         <a onclick="window.open('https://www.google.ca/maps/place/5050+Kingsway,+Burnaby,+BC+V5H/@49.2254853,-122.9918359,17z/data=!4m2!3m1!1s0x5486765a640ec99b:0x3cff48e6161b8101'); return false;">
-          <img class="bg img-responsive" src="/static/img/map.jpg">
+          <img class="bg img-responsive" src="/static/img/map.jpg" title="200-5050 Kingsway Burnaby BC, Canada V5H 4H2">
         </a>  
       </div>
 
@@ -46,7 +46,7 @@
 
       <div class="row contact-ways text-center">
 
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-md-offset-1 col-md-2 clickable" onclick="window.open('https://www.google.ca/maps/place/5050+Kingsway,+Burnaby,+BC+V5H/@49.2254853,-122.9918359,17z/data=!4m2!3m1!1s0x5486765a640ec99b:0x3cff48e6161b8101'); return false;">
             <img src="/static/img/location.png">
             <h5>{{'Address' | translate: this}}</h5>
             <p>200-5050 Kingsway
@@ -55,10 +55,12 @@
             </p>               
           </div>
 
-          <div class="col-md-2">
-            <img src="/static/img/email.png">
-            <h5>{{'Email' | translate: this}}</h5>
-            <p>info@heliosroofing.com</p>                                          
+          <div class="col-md-2 clickable">
+            <a href="mailto:info@heliosroofing.com">
+              <img src="/static/img/email.png">
+              <h5>{{'Email' | translate: this}}</h5>
+              <p>info@heliosroofing.com</p>
+            </a>                                          
           </div>
 
 
