@@ -134,16 +134,16 @@ angular.module('heliosApp.services', [])
         },
         {
           code: 'MetalRoof',
-          icon: '/static/img/services/Single-Ply_Roofing_for_Low_slope_Roofs.png',
+          icon: '/static/img/services/Metal_Roofs.png',
           name: {
             en: 'Metal Roofing',
-            zhs: '单层平顶屋面',
-            zht: '單層平頂屋面'
+            zhs: '金属屋顶',
+            zht: '金屬屋頂'
           }, 
           detail: {
-            en: 'Single ply roof systems provide strength, flexibility, and long-lasting durability. The inherent advantages of pre-fabricated sheets are the consistency of the quality of the products that are manufactured, the versatility in their attachment methods, and therefore, their broader applicability.',
-            zhs: '单层屋顶是合成材料生产的柔性片材。提供坚固、灵活和持久的耐用性。',
-            zht: '單層屋頂是合成材料生產的柔性片材，提供堅固，靈活和持久的耐用性。'
+            en: 'A metal roof is a roofing system made from metal piece, or tiles. It is a component of the building envelope. It is very durable in cold weather and are 100% recyclable',
+            zhs: '金属屋顶是由金属片或瓦片制成的屋面系统。金属屋顶的材质非常耐用，特别是在寒冷的天气状况下。并且金属屋顶的材料非常环保，均为可回收材料。',
+            zht: '金屬屋頂是由金屬片或瓦片製成的屋面系統。金屬屋頂的材質非常耐用，特別是在寒冷的天氣狀況下。並且金屬屋頂的材料非常環保，均為可回收材料。'
           },
           category: ['commercial', 'residential'],
         },
@@ -164,7 +164,7 @@ angular.module('heliosApp.services', [])
           category: ['residential'],
         },
         {
-          code: 'skyline',
+          code: 'skylight',
           icon: '/static/img/services/Skylight_Installation_and_Repairs.png',
           img: '/static/img/services/Skylight_Installation_and_Repairs.jpg',
           name: {
@@ -184,28 +184,28 @@ angular.module('heliosApp.services', [])
           icon: '/static/img/services/Repair_and_Maintenance.png',
           name: {
             en: 'Tile Roof Maintenance',
-            zhs: '日常维护及维修',
-            zht: '日常維護及維修'
+            zhs: '瓦屋顶日常维护及维修',
+            zht: '瓦屋顶日常維護及維修'
           }, 
           detail: {
-            en: 'We provides 24 x 7 support when you need us.',
-            zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
-            zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
+            en: 'Tile roofs provide several significant advantages over other types. Tile constructions are resistant to pests and can withstand harsh weather conditions. They also have superior thermal properties that reduce ambient temperatures on the roof deck. Tile roofs come in a broad array of colors that can complement the appearance of your home. But perhaps most significantly, a properly installed tile roof can last more than 100 years with only modest care. ',
+            zhs: '瓦屋顶通常有几个显著的优势。不但抗虫害，并能承受恶劣的天气条件，而且冬暖夏凉。但瓦屋顶需要定期的保养维护，才可以持久如新，甚至长达100年以上。',
+            zht: '瓦屋頂通常有幾個顯著的優勢。不但抗蟲害，並能承受惡劣的天氣條件，而且冬暖夏涼。但瓦屋頂需要定期的保養維護，才可以持久如新，甚至長達100年以上。'
           },
           category: ['residential'],
         },
         {
           code: 'syntheticSlateShakeRoofing',
-          icon: '/static/img/services/Repair_and_Maintenance.png',
+          icon: '/static/img/services/Slate_and_Tile_Roofs.png',
           name: {
             en: 'Synthetic slate & shake roofing',
-            zhs: '日常维护及维修',
-            zht: '日常維護及維修'
+            zhs: '合成石板屋顶',
+            zht: '合成石板屋顶'
           }, 
           detail: {
-            en: 'We provides 24 x 7 support when you need us.',
-            zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
-            zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
+            en: 'Synthetic slate is considered a premium roofing product, compared to standard asphalt shingles. Many synthetic slate roofing products are guaranteed to last at least from 30 to 50 years. These low maintenance roofing tiles are designed to withstand high wind, fire, freeze-thaw cycles, and other conditions. Some roofing tiles also contain fire retardant and UV inhibitors for extra protection.',
+            zhs: '合成石板被认为是优质屋面产品。许多合成石板屋面产品都保证至少要持续30至50年。这些低维护屋面瓦被设计成能承受高风，火，冻融循环，以及其他条件。一些屋顶上的瓦片也含有阻燃剂和紫外线抑制剂提供额外的保护。',
+            zht: '合成石板被認為是優質屋面產品。許多合成石板屋面產品都保證至少要持續30至50年。這些低維護屋面瓦被設計成能承受高風，火，凍融循環，以及其他條件。一些屋頂上的瓦片也含有阻燃劑和紫外線抑製劑提供額外的保護。'
           },
           category: ['residential'],
         },
@@ -227,16 +227,16 @@ angular.module('heliosApp.services', [])
         },
         {
           code: 'waterproofing',
-          icon: '/static/img/services/Repair_and_Maintenance.png',
+          icon: '/static/img/services/Insulation.png',
           name: {
             en: 'Waterproofing',
-            zhs: '日常维护及维修',
-            zht: '日常維護及維修'
+            zhs: '防水',
+            zht: '防水'
           }, 
           detail: {
-            en: 'We provides 24 x 7 support when you need us.',
-            zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
-            zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
+            en: 'We help on waterproofing solutions to your commercial properties.',
+            zhs: '我们为您的商业楼宇提供最好的防水防漏解决方案。',
+            zht: '我們為您的商業樓宇提供最好的防水防漏解決方案。'
           },
           category: ['commercial'],
         },
@@ -245,13 +245,13 @@ angular.module('heliosApp.services', [])
           icon: '/static/img/services/Repair_and_Maintenance.png',
           name: {
             en: 'New Construction',
-            zhs: '日常维护及维修',
-            zht: '日常維護及維修'
+            zhs: '新建房屋楼宇',
+            zht: '新建房屋樓宇'
           }, 
           detail: {
-            en: 'We provides 24 x 7 support when you need us.',
-            zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
-            zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
+            en: 'Whether it’s Single or Multi-family, Development or Individually based, we are poised to take on your roofing project.',
+            zhs: '无论是商业工程还是个人住家，我们都欢迎大小屋顶工程合作。',
+            zht: '無論是商業工程還是個人住家，我們都歡迎大小屋頂工程合作。'
           },
           category: ['commercial', 'residential'],
         },
@@ -281,6 +281,7 @@ angular.module('heliosApp.services', [])
         'liquid': {
             'template': 'project.html',
             'title': 'Liquid Urethane Membrane',
+            'service': 'MetalRoof',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'detail': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'img0': '/static/img/projects/Helios_projects_Liquid_Urethane_Membrane5.jpg',
@@ -294,6 +295,7 @@ angular.module('heliosApp.services', [])
         'shingle': {
             'template': 'project.html',
             'title': 'Shingle',
+            'service': 'singlePly',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'detail': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'img0': '/static/img/projects/Helios_projects_shigle1_7.jpg',
@@ -307,6 +309,7 @@ angular.module('heliosApp.services', [])
         'insulation': {
             'template': 'project.html',
             'title': 'Torch-On Roofing',
+            'service': 'torchOn',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'detail': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'img0': '/static/img/projects/Helios_projects_Insulation3.jpg',
@@ -320,6 +323,7 @@ angular.module('heliosApp.services', [])
          'richmond': {
             'template': 'project.html',
             'title': 'Bridgeport Road',
+            'service': 'singlePly',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'detail': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'img0': '/static/img/projects/Helios_projects_BridgeportRoadRichmond2.jpg',
@@ -339,7 +343,7 @@ angular.module('heliosApp.services', [])
           });
         },
         serviceCategories: serviceCategories,
-        serviceHighlight: ['torchOn', 'skyline', 'insulation', 'ventilation'].map(function(serviceId){
+        serviceHighlight: ['torchOn', 'skylight', 'insulation', 'ventilation'].map(function(serviceId){
           return servicesMap[serviceId];
         }),
         serviceDetail: function(serviceId){

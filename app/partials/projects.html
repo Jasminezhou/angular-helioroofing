@@ -25,7 +25,7 @@
           <p>{{project.info}}</p>
       
           <a ui-sref="root.projects.detail({projectId: project.projectId})" class="btn btn-helios" role="button">Project Detials</a> 
-          <a href="#" ng-click="openServiceModal('touchOn')"><img class="thumbnail-icon" src="/static/img/services/Repair_and_Maintenance.png" alt="services icon"></a>
+          <a href="#" ng-click="openServiceModal(project.service)"><img class="thumbnail-icon" src="/static/img/services/Repair_and_Maintenance.png" alt="services icon"></a>
         </div><!-- caption-->
         </div><!-- thumbnail-->
       </div><!-- col-sm-6 col-md-4-->
