@@ -30,7 +30,7 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
             abstract: true,
             views: {
                 'header': {
-                    templateUrl: 'app/partials/header.html',
+                    templateUrl: 'partials/header.html',
                     controller: 'RootCtrl'
                 },
                 'main': {
@@ -38,11 +38,11 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
                     controller: 'RootCtrl'
                 },
                 'footer': {
-                    templateUrl: 'app/partials/footer.html',
+                    templateUrl: 'partials/footer.html',
                     controller: 'RootCtrl'
                 },
                 'chat': {
-                    templateUrl: 'app/partials/chat.html',
+                    templateUrl: 'partials/chat.html',
                     controller: 'ChatCtrl'
                 }
             }
@@ -53,7 +53,7 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
             url: '/',
             views: {
                 'master@root': {
-                    templateUrl: 'app/partials/home.html',
+                    templateUrl: 'partials/home.html',
                     controller: 'HomeCtrl'
                 }
             }
@@ -63,7 +63,7 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
             url: '/services/:category',
             views: {
                 'master@root': {
-                    templateUrl: 'app/partials/services.html',
+                    templateUrl: 'partials/services.html',
                     controller: 'ServicesCtrl'
                 }
             }
@@ -76,7 +76,7 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
             url: '/projects',
             views: {
                 'master@root': {
-                    templateUrl: 'app/partials/projects.html',
+                    templateUrl: 'partials/projects.html',
                     controller: 'ProjectsCtrl'
                 }
             }
@@ -86,7 +86,7 @@ angular.module('heliosApp', ['ui.router', 'ui.bootstrap', 'smoothScroll', 'ngSto
             url: '/projects/:projectId',
             views: {
                 'master@root': {
-                    templateUrl: 'app/partials/project_detail.html',
+                    templateUrl: 'partials/project_detail.html',
                     controller: 'ProjectDetailCtrl'
                 }
             }

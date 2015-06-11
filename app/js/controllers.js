@@ -20,7 +20,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     $scope.openServiceModal = function (serviceId) {
 
       var modalInstance = $modal.open({
-        templateUrl: '/app/partials/service_detail.html',
+        templateUrl: 'partials/service_detail.html',
         controller: 'ServiceModalInstanceCtrl',
         size: 'lg',
         resolve: {
@@ -34,7 +34,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     $rootScope.openEstimateModal = function () {
 
       var modalInstance = $modal.open({
-        templateUrl: '/app/partials/estimate_detail.html',
+        templateUrl: 'partials/estimate_detail.html',
         controller: 'EstimateModalInstanceCtrl',
         size: 'lg',
       });
