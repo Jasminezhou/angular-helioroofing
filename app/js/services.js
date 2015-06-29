@@ -13,40 +13,40 @@ angular.module('heliosApp.services', [])
       {
         image: '/static/img/projects/Helios_projects_Liquid_Urethane_Membrane6.jpg',
         title: {
-            en: 'Protect your home is our top priority',
-            zhs: '我们以保护您的房屋为己任',
-            zht: '我們以保護您的房屋為己任',
+            en: 'Welcome to Helios Roofing & Waterproofing',
+            zhs: '您好，我们是Helios屋顶工程公司',
+            zht: '您好，我们是Helios屋顶工程公司',
         },
         detail: {
-            en: 'We are roofing contractor who is offer a total roofing, reroofing, waterproofing and repair service on all roof system. Our residential services protect you home, from Top down. ',
-            zhs: '我们的住家屋顶装设、维护、防水服务，为您的居家提供自上而下的防护。',
-            zht: '我們的住家屋頂裝設、維護、防水服務，為您的居家提供自上而下的防護。'
+            en: 'Helios Roofing & Waterproofing Ltd offers roof design, roof installation and roof management services. We work on commercial, industrial and residential properties, protect them against BC’s extreme weather. ',
+            zhs: '我们提供屋顶设计，屋顶安装和维护服务。我们承接商业，工业和住宅物业项目，保护您的工作居所在卑诗省的极端天气下依然舒适。',
+            zht: '我们提供屋顶设计，屋顶安装和维护服务。我们承接商业，工业和住宅物业项目，保护您的工作居所在卑诗省的极端天气下依然舒适。'
         }
       },
       {
         image: '/static/img/projects/Helios_projects_shigle1_7.jpg',
         title: {
-            en: 'Great service is our Goal',
-            zhs: '做到最好的服务水平',
-            zht: '做到最好的服務水平'
+            en: 'Expert on all roofing system',
+            zhs: '各类屋顶专家',
+            zht: '各类屋顶专家'
         },
         detail: {
-            en: 'When you work with our Expert Roofers, Helios committed to finding the best roofing solution for your needs.',
-            zhs: 'Helios屋顶公司承诺会提供最适合您的解决方案',
-            zht: 'Helios屋頂公司承諾會提供最適合您的解決方案'
+            en: 'We are approved installers of all roofing systems such as torch on flat roofing, single ply roofing, green roofing, metal cladding, and metal roofing.',
+            zhs: '我们获得政府批准承接所有屋面系统安装维护，如烫胶屋顶，单层屋面，屋顶绿化，金属包层和金属屋面。',
+            zht: '我们获得政府批准承接所有屋面系统安装维护，如烫胶屋顶，单层屋面，屋顶绿化，金属包层和金属屋面。'
         }
       },
       {
         image: '/static/img/projects/Helios_projects_BridgeportRoadRichmond1.jpg',
         title: {
-            en: 'Commercial Roofing, In time and On time',
+            en: 'Great satisfaction from clients',
             zhs: '保质准时的商业屋顶工程',
             zht: '保質準時的商業屋頂工程'
         },
         detail: {
-            en: 'Protecting your investment is what we concern. Our commercial roofing experts let you focus on your daily operation. Let us taking care of your "Top headache".',
-            zhs: '我们的商业屋顶维修团队，助您一扫屋顶烦恼，轻松运筹商机',
-            zht: '我們的商業屋頂維修團隊，助您一掃屋頂煩惱，輕鬆運籌商機'
+            en: 'With professionalism led involvement on each project, our aim is to deliver quality projects safely, on time, on budget and defect free, ensuring total satisfaction from every client. ',
+            zhs: '秉承敬业精神参与的每一个项目中，我们的目标是高质量的工程安全，按时，按预算和无缺陷的工程品质，确保从每一个客户完全满意。',
+            zht: '秉承敬业精神参与的每一个项目中，我们的目标是高质量的工程安全，按时，按预算和无缺陷的工程品质，确保从每一个客户完全满意。'
         }
       },
     ];
