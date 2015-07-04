@@ -34,7 +34,15 @@ handlers:
   static_files: app/static/\1
   upload: app/static/(.)
 
+- url: /api/.*
+  script: main.app
+
 - url: (.*)/
   static_files: app\1/index.html
   upload: app/index\.html
   mime_type: text/html; charset=utf-8
+
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
