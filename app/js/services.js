@@ -278,13 +278,21 @@ angular.module('heliosApp.services', [])
     }, {});
 
     var projectsMap = {
+        'epdm': {
+            'template': 'project.html',
+            'title': 'EPDM',
+            'service': 'singlePly',
+            'info': 'Commercial Single Ply Roofing project',
+            'folder': '/static/img/projects/commSingle/EPDM',
+            'titleImg': '6.jpg',
+        },
         'liquid': {
             'template': 'project.html',
             'title': 'Liquid Urethane Membrane',
             'service': 'MetalRoof',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'folder': '/static/img/projects/liquid1',
-            'titleImg': '/static/img/projects/liquid1/5.jpg',
+            'titleImg': '5.jpg',
         },
         'shingle': {
             'template': 'project.html',
@@ -292,7 +300,7 @@ angular.module('heliosApp.services', [])
             'service': 'singlePly',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'folder': '/static/img/projects/shingle1',
-            'titleImg': '/static/img/projects/shingle1/7.jpg',
+            'titleImg': '7.jpg',
         },
         'insulation': {
             'template': 'project.html',
@@ -300,7 +308,7 @@ angular.module('heliosApp.services', [])
             'service': 'torchOn',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'folder': '/static/img/projects/insulation1',
-            'titleImg': '/static/img/projects/insulation1/3.jpg',
+            'titleImg': '3.jpg',
         },
          'richmond': {
             'template': 'project.html',
@@ -308,7 +316,7 @@ angular.module('heliosApp.services', [])
             'service': 'singlePly',
             'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
             'folder': '/static/img/projects/bridgeport1',
-            'titleImg': '/static/img/projects/bridgeport1/2.jpg',
+            'titleImg': '2.jpg',
         },
     };
     return {
@@ -325,7 +333,7 @@ angular.module('heliosApp.services', [])
         serviceDetail: function(serviceId){
           return servicesMap[serviceId];
         },
-        projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
+        projectSummary: ['epdm', 'liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
           var summary = projectsMap[projectId];
           summary.projectId = projectId;
           return summary;
