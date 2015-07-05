@@ -11,7 +11,7 @@ angular.module('heliosApp.services', [])
 .factory('SiteContent', function(){
     var slides = [
       {
-        image: '/static/img/projects/Helios_projects_Liquid_Urethane_Membrane6.jpg',
+        image: '/static/img/projects/liquid1/6.jpg',
         title: {
             en: 'Welcome to Helios Roofing & Waterproofing',
             zhs: '您好，我们是Helios屋顶工程公司',
@@ -24,7 +24,7 @@ angular.module('heliosApp.services', [])
         }
       },
       {
-        image: '/static/img/projects/Helios_projects_shigle1_7.jpg',
+        image: '/static/img/projects/shingle1/7.jpg',
         title: {
             en: 'Expert on all roofing system',
             zhs: '各类屋顶专家',
@@ -37,7 +37,7 @@ angular.module('heliosApp.services', [])
         }
       },
       {
-        image: '/static/img/projects/Helios_projects_BridgeportRoadRichmond1.jpg',
+        image: '/static/img/projects/bridgeport1/1.jpg',
         title: {
             en: 'Great satisfaction from clients',
             zhs: '保质准时的商业屋顶工程',
