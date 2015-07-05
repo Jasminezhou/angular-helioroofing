@@ -325,7 +325,7 @@ angular.module('heliosApp.services', [])
         serviceDetail: function(serviceId){
           return servicesMap[serviceId];
         },
-        projectSummary: ['liquid', 'shingle', 'insulation', 'richmond'].map(function(projectId){
+        projectSummary: Object.keys(projectsMap).map(function(projectId){
           var summary = projectsMap[projectId];
           summary.projectId = projectId;
           return summary;
