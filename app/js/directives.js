@@ -1,5 +1,15 @@
 angular.module('heliosApp.directives', [])
 
+.directive('errHide', function() {
+  return {
+    link: function(scope, element, attrs) {
+      element.bind('error', function() {
+        element.addClass('hidden');
+      });
+    }
+  }
+})
+
 .directive('weatherBar', function($http, $rootScope, $localStorage, $state){
     return {
         restrict: 'E',

@@ -9,57 +9,21 @@
     </div><!-- /.carousel -->
     <div class="container" id="projects">
  
-       <div class="row">
+      <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="{{project.img0}}" alt="project image">
+          <img class="img-responsive" src="{{project.titleImg}}" err-hide alt="project image">
         </div>
-        </div>
+      </div>
 
       <div class="row">
         <h1 class="text-center">{{project.title}}</h1>
       </div>
 
-      <div>
-          <p class="col-md-12 text-center lead">{{project.info}}</p>
-      </div>
-
       <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive" src="{{project.img1}}" alt="project image">      
-        </div>
-
-        <div class="col-md-6">
-          <img class="img-responsive" src="{{project.img2}}" alt="project image">
+        <div class="col-md-12" ng-repeat="n in [] | range:10">
+          <img class="img-responsive" ng-src="{{project.folder}}/{{n}}.jpg" err-hide alt="project image">
         </div>
       </div>
-
-       <div class="row">
-        <div class="col-md-12">
-          <img class="img-responsive" src="{{project.img3}}" alt="project image">
-        </div>
-        </div>
-
-      <div class="row">
-        <div class="col-md-6 project-secondary-text lead">
-              <p>{{project.detail}}
-              </p>
-        </div>
-
-        <div class="col-md-6">
-          <img class="img-responsive" src="{{project.img4}}" alt="project image">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive" src="{{project.img5}}" alt="project image">      
-        </div>
-
-        <div class="col-md-6">
-          <img class="img-responsive" src="{{project.img6}}" alt="project image">
-        </div>
-      </div>
-
           
         <div class="more-projects-btn">
           <a ui-sref="root.projects.summary" class="btn btn-helios col-md-offset-10 col-md-2 col-xs-12" role="button">More Projects Here</a> 

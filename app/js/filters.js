@@ -1,5 +1,14 @@
 angular.module('heliosApp.filters', [])
 
+.filter('range', function() {
+  return function(input, total) {
+    total = parseInt(total);
+    for (var i=0; i<total; i++)
+      input.push(i);
+    return input;
+  };
+})
+
 .filter('translate', function(){
   // translation table - Make Sure key is all in LOWER CASE
   var translation = {
