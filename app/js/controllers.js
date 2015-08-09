@@ -98,6 +98,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
 })
 .controller('ProjectsCtrl', function($scope, scrollServices, SiteContent){
     $scope.projectSummary = SiteContent.projectSummary;
+    $scope.serviceDetail = SiteContent.serviceDetail;
     scrollServices.scrollTop();
     // TODO: to be deleted, just for Jasmine
     //$scope.openServiceModal('touchOn');

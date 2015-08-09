@@ -11,7 +11,7 @@ angular.module('heliosApp.services', [])
 .factory('SiteContent', function(){
     var slides = [
       {
-        image: '/static/img/projects/liquid1/6.jpg',
+        image: '/static/img/projects/liquid/6.jpg',
         title: {
             en: 'Welcome to Helios Roofing & Waterproofing',
             zhs: '您好，我们是Helios屋顶工程公司',
@@ -37,7 +37,7 @@ angular.module('heliosApp.services', [])
         }
       },
       {
-        image: '/static/img/projects/bridgeport1/1.jpg',
+        image: '/static/img/projects/commTorchFlat/bridgeportRichmond/1.jpg',
         title: {
             en: 'Great satisfaction from clients',
             zhs: '保质准时的商业屋顶工程',
@@ -80,11 +80,25 @@ angular.module('heliosApp.services', [])
             zhs: '烫胶屋顶',
             zht: '烫胶屋顶'
           }, 
+          /*
           detail: {
             en: 'We help you to install and maintain this type of roof.',
             zhs: '一种塑胶底的防水屋顶。跟沥青片和瓦片不同的地方在于他的安装。这种屋顶是烧上去的，不是钉上去或卡上去的。如果屋顶是平顶的，这可能是最好的屋顶材质选项',
             zht: '一種塑膠底的防水屋頂。跟瀝青片和瓦片不同的地方在於他的安裝。這種屋頂是燒上去的，不是釘上去或卡上去的。如果屋頂是平頂的，這可能是最好的屋頂材質選項.'
           },
+          */
+          detail: {
+            en: '<p>We offers complete SBS system for flat or low slope roofing. ' +
+          'Generally, the complete SBS system contains a flexible SBS elastomeric bitumen waterproofing membrane with a non-woven polyester reinforcement. '+
+          'Both sides are protected by a thermofusible film. Also, there is another layer of SBS elastomeric bitumen waterproofing membranes with a non-woven polyester reinforcement. '+
+          'The topside is protected by slate chippings and the underside by a thermofusible film.</p>'+
+          '<ul>Benefits:'+ 
+            '<li>High performance: Non-woven polyester reinforcement of 180 g/m² offers excellent static and dynamic puncture resistance.</li>'+
+            '<li>Versatility: Designed to have a perfect adaptability to weather and movement of the substrate.</li>'+
+            '<li>Reliability and durability: Made from selected bitumen and polymers containing additives, which give a high resistance to weathering.</li>'+
+            '<li>Easy to apply: Underside and overlap protected by a thermofusible film for a quick and safe use with torch-on techniques. The topside is covered by slate chippings for the protection of the membrane against external elements and UV.</li>'+
+          '</ul>',
+          },  
           category: ['commercial', 'residential'],
         },
         {
@@ -178,6 +192,21 @@ angular.module('heliosApp.services', [])
             zht: '貼心設計安裝天窗，讓您盡情享受溫哥華的溫暖陽光。'
           },
           category: ['commercial', 'residential'],
+        },
+        {
+          code: 'cedarConversion',
+          icon: '/static/img/services/Slate_and_Tile_Roofs.png',
+          name: {
+            en: 'Cedar Conversions roofing',
+            zhs: '杉木屋顶翻新',
+            zht: '杉木屋頂翻新'
+          }, 
+          detail: {
+            en: 'A cedar roof conversion involves removing all existing cedar shakes and shingles on your roof and substituting it with a roofing material like GAF shingles',
+            zhs: '杉木屋顶翻新通常会用先进的屋顶材料取代老化的木制屋顶。',
+            zht: '杉木屋頂翻新通常會用先進的屋頂材料取代老化的木製屋頂。'
+          },
+          category: ['residential'],
         },
         {
           code: 'tileRoofMaintenance',
@@ -286,38 +315,167 @@ angular.module('heliosApp.services', [])
             'folder': '/static/img/projects/commSingle/EPDM',
             'titleImg': '6.jpg',
         },
-        'liquid': {
+        'bridgeport': {
             'template': 'project.html',
-            'title': 'Liquid Urethane Membrane',
-            'service': 'MetalRoof',
-            'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
-            'folder': '/static/img/projects/liquid1',
+            'title': 'Bridgeport Road Richmond',
+            'service': 'torchOn',
+            'info': 'More info about this project...',
+            'folder': '/static/img/projects/commTorchFlat/bridgeportRichmond',
             'titleImg': '5.jpg',
         },
-        'shingle': {
+        'fraserSurrey': {
             'template': 'project.html',
-            'title': 'Shingle',
-            'service': 'singlePly',
-            'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
-            'folder': '/static/img/projects/shingle1',
-            'titleImg': '7.jpg',
+            'title': 'Fraser Highway Surrey',
+            'service': 'torchOn',
+            'info': 'More info about this project...',
+            'folder': '/static/img/projects/commTorchFlat/fraserSurrey',
+            'titleImg': '9.jpg',
+        },
+        'oakVancouver': {
+            'template': 'project.html',
+            'title': 'Oak Street Vancouver',
+            'service': 'torchOn',
+            'info': 'More info about this project...',
+            'folder': '/static/img/projects/commTorchFlat/oakVancouver',
+            'titleImg': '4.jpg',
+        },
+        'vanturaAbbortsford': {
+            'template': 'project.html',
+            'title': 'Vantura Road, Abbortsford',
+            'service': 'torchOn',
+            'info': 'More info about this project...',
+            'folder': '/static/img/projects/commTorchFlat/vanturaAbbortsford',
+            'titleImg': '5.jpg',
+        },
+        'green': {
+            'template': 'project.html',
+            'title': 'Green Roof',
+            'service': 'green',
+            'info': 'More info about this project...',
+            'folder': '/static/img/projects/green',
+            'titleImg': '1.jpg',
         },
         'insulation': {
             'template': 'project.html',
-            'title': 'Torch-On Roofing',
-            'service': 'torchOn',
-            'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
-            'folder': '/static/img/projects/insulation1',
-            'titleImg': '3.jpg',
+            'title': 'Insulation',
+            'service': 'insulation',
+            'info': 'More info about this project...',
+            'folder': '/static/img/projects/insulation',
+            'titleImg': '4.jpg',
         },
-         'richmond': {
+        'liquid': {
             'template': 'project.html',
-            'title': 'Bridgeport Road',
-            'service': 'singlePly',
-            'info': 'This is a text placeholder. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue sed risus vitae efficitur. Sed dapibus dictum risus, nec pellentesque libero dignissim sed. Praesent blandit velit nulla, in tempus nisi ornare sed. Maecenas sagittis tortor in nibh tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus sit amet magna vitae nulla blandit commodo. Sed ornare hendrerit ultrices. Morbi bibendum massa a quam egestas tempus. Etiam aliquet neque et leo ornare pharetra. Cras odio orci, feugiat eu dapibus vitae, laoreet quis ante. Nulla convallis lorem ante, eu sodales erat dictum quis. Nullam vehicula scelerisque nulla ornare rhoncus. Nullam ultricies et neque sed iaculis.',
-            'folder': '/static/img/projects/bridgeport1',
+            'title': 'Samlin Dr, Vancouver',
+            'service': 'liquid',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/liquid',
+            'titleImg': '5.jpg',
+        },
+        'liquid': {
+            'template': 'project.html',
+            'title': 'Samlin Dr, Vancouver',
+            'service': 'MetalRoof',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/liquid',
+            'titleImg': '5.jpg',
+        },
+        'metal1': {
+            'template': 'project.html',
+            'title': 'Metal roofing project',
+            'service': 'MetalRoof',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/metal/proj1',
             'titleImg': '2.jpg',
         },
+        'metal2': {
+            'template': 'project.html',
+            'title': 'W 21 Street, Vancouver',
+            'service': 'MetalRoof',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/metal/w21Vancouver',
+            'titleImg': '3.jpg',
+        },
+        'new1': {
+            'template': 'project.html',
+            'title': 'New Construction Project',
+            'service': 'construction',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/newConstruction/proj1',
+            'titleImg': '2.jpg',
+        },
+        'new2': {
+            'template': 'project.html',
+            'title': 'W 29 Steet, Vancouver',
+            'service': 'construction',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/newConstruction/w29Vancouver',
+            'titleImg': '8.jpg',
+        },
+        'resCedar1': {
+            'template': 'project.html',
+            'title': 'Semana Crescent, Vancouver',
+            'service': 'cedarConversion',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resCedar/semanaVancouver',
+            'titleImg': '5.jpg',
+        },
+        'resCedar2': {
+            'template': 'project.html',
+            'title': 'Dease Place, Coquitlam',
+            'service': 'cedarConversion',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resCedar/deaseCoquitlam',
+            'titleImg': '5.jpg',
+        },
+        'resCedar3': {
+            'template': 'project.html',
+            'title': 'Sicamous Aveue, Coquitlam',
+            'service': 'cedarConversion',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resCedar/sicamousCoquitlam',
+            'titleImg': '3.jpg',
+        },
+        'resCedar4': {
+            'template': 'project.html',
+            'title': 'No. 2, Richmond',
+            'service': 'cedarConversion',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resCedar/no2Richmond',
+            'titleImg': '4.jpg',
+        },
+        'resTile1': {
+            'template': 'project.html',
+            'title': 'Arrowsmith Place, Coquitlam',
+            'service': 'tileRoofMaintenance',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resTile/arrowsmithCoquitlam',
+            'titleImg': '8.jpg',
+        },
+        'resTile2': {
+            'template': 'project.html',
+            'title': 'Residential Tile Roof Maintenance',
+            'service': 'tileRoofMaintenance',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resTile/proj1',
+            'titleImg': '9.jpg',
+        },
+        'resTorch1': {
+            'template': 'project.html',
+            'title': 'Rayside street, Burnaby',
+            'service': 'torchOn',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resTorch/raysideBurnaby',
+            'titleImg': '6.jpg',
+        },
+        'resTorch2': {
+            'template': 'project.html',
+            'title': 'Grant street, Burnaby',
+            'service': 'torchOn',
+            'info': 'More info about this project...',            
+            'folder': '/static/img/projects/resTorch/grantBurnaby',
+            'titleImg': '9.jpg',
+        },
+
     };
     return {
         slides: slides,
@@ -338,7 +496,7 @@ angular.module('heliosApp.services', [])
           summary.projectId = projectId;
           return summary;
         }),
-        projectHighlight: ['liquid', 'shingle', 'insulation'].map(function(projectId){
+        projectHighlight: ['liquid', 'insulation'].map(function(projectId){
           var summary = projectsMap[projectId];
           summary.projectId = projectId;
           return summary;
