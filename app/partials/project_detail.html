@@ -9,11 +9,11 @@
     </div><!-- /.carousel -->
     <div class="container" id="projects">
 
-      <!--
+
       <div class="row">
         <h1 class="text-center">{{project.title}}</h1>
       </div>
-      -->
+
 
       <div class="row">
         <div class="col-md-12" ng-repeat="n in [] | range:10">
@@ -22,7 +22,7 @@
       </div>
           
         <div class="more-projects-btn">
-          <a ui-sref="root.projects.summary" class="btn btn-helios col-md-offset-10 col-md-2 col-xs-12" role="button">More Projects Here</a> 
+          <a ui-sref="root.projects.summary" class="btn btn-helios col-md-offset-10 col-md-2 col-xs-12" role="button">{{'All Projects' | translate: this}}</a> 
         </div>
   
  

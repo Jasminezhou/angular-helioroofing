@@ -121,9 +121,21 @@ angular.module('heliosApp.filters', [])
       zhs: '更多工程',
       zht: '更多工程'
     },
+    'featured projects': {
+      zhs: '精选工程',
+      zht: '精選工程'
+    },
     'project type': {
       zhs: '工程类型',
       zht: '工程類型'
+    },
+    'project summary': {
+      zhs: '项目展示',
+      zht: '項目展示'
+    },
+    'details': {
+      zhs: '详细信息',
+      zht: '詳細信息'
     },
     're-roofing': {
       zhs: '屋顶重修',

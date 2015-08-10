@@ -78,6 +78,7 @@ angular.module('heliosApp.controllers', ['heliosApp.services'])
     $scope.slides = SiteContent.slides;
     $scope.serviceHighlight = SiteContent.serviceHighlight;
     $scope.projectHighlight = SiteContent.projectHighlight;
+    $scope.serviceDetail = SiteContent.serviceDetail;
     $rootScope.$on('languageChanged', function(event, data){
       $scope.language = data;
     });

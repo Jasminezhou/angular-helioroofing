@@ -406,7 +406,7 @@ footer{
 }
 
 #project-summary blockquote{
-  height: 80px;
+  height: 97px;
   overflow: hidden;
 }
 
@@ -417,6 +417,10 @@ footer{
 #project-summary h1{
   color: #fff;
   padding: 50px;
+}
+
+#project-summary .summary-img {
+  height: 217px
 }
 
 .porject-more-butten{

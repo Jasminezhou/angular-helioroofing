@@ -41,7 +41,6 @@
                 <img class="img-responsive" ng-src="{{service.icon}}" alt="services icon">
                 <div class="caption text-center">
                   <h5>{{service.name | translate: this}}</h5>
-                  <p class="service-summary hidden-xs">{{service.detail | translate: this}}</p>
                   <p class="hidden-xs"><a href="#" class="btn detial-btn" role="button">{{'More Detail' | translate: this}}</a></p>
                 </div>
               </div>
@@ -61,20 +60,25 @@
 
       <div class="container-fluid" id="project-summary">
         <div class="container">
-          <h1 class="text-center">{{'Project summary' | translate: this}}</h1>
+          <h1 class="text-center">{{'Featured Projects' | translate: this}}</h1>
           <div class="row">
             <div class="col-sm-6 col-md-4" ng-repeat="project in projectHighlight">           
-                 <img class="img-responsive" ng-src="{{project.folder}}/{{project.titleImg}}" alt="project image">
+              <a ui-sref="root.projects.detail({projectId: project.projectId})">
+                <img class="summary-img img-responsive" ng-src="{{project.folder}}/{{project.titleImg}}" alt="project image">
+              </a>  
               <div class="thumbnail">
               <div class="caption">       
                 <blockquote>
                   <h4>{{project.title}}<h4>
-                  <h5>{{project.service}}</h5>
-                </blockquote>       
+                  <h5>{{serviceDetail(project.service).name | translate: this}}</h5>
+                </blockquote>
+                <!--       
+                <p>{{project.info}}</p>
+                -->
             
-                <a ui-sref="root.projects.detail({projectId: project.projectId})" class="btn btn-helios" role="button">Project Detials</a> 
-                <a href="#" ng-click="openServiceModal(project.service)"><img class="thumbnail-icon" src="/static/img/services/Repair_and_Maintenance.png" alt="services icon"></a>
-              </div><!--.caption-->
+                <a ui-sref="root.projects.detail({projectId: project.projectId})" class="btn btn-helios" role="button">{{'Details' | translate: this}}</a> 
+                <a href="#" ng-click="openServiceModal(project.service)"><img class="thumbnail-icon" ng-src="{{serviceDetail(project.service).icon}}" alt="services icon"></a>
+              </div><!-- caption-->
               </div><!-- thumbnail-->
             </div><!-- col-sm-6 col-md-4-->
           </div><!--row-->

@@ -72,9 +72,9 @@ angular.module('heliosApp.services', [])
 
     var services = [
         {
-          code: 'torchOn',
-          icon: '/static/img/services/Torch-On_Roofing.png',
-          img: '/static/img/services/Torch-On_Roofing.jpg',
+          code: 'commTorch',
+          icon: '/static/img/services/CommTorchFlat/icon.png',
+          img: '/static/img/services/CommTorchFlat/project.jpg',
           name: {
             en: 'Torch-On Roofing',
             zhs: '烫胶屋顶',
@@ -99,41 +99,59 @@ angular.module('heliosApp.services', [])
             '<li>Easy to apply: Underside and overlap protected by a thermofusible film for a quick and safe use with torch-on techniques. The topside is covered by slate chippings for the protection of the membrane against external elements and UV.</li>'+
           '</ul>',
           },  
-          category: ['commercial', 'residential'],
+          category: ['commercial'],
         },
         {
-          code: 'singlePly',
-          icon: '/static/img/services/Single-Ply_Roofing.png',
+          code: 'resTorch',
+          icon: '/static/img/services/ResTorch/icon.png',
+          img: '/static/img/services/ResTorch/project.jpg',
+          name: {
+            en: 'Torch-On Roofing',
+            zhs: '烫胶屋顶',
+            zht: '烫胶屋顶'
+          }, 
+          /*
+          detail: {
+            en: 'We help you to install and maintain this type of roof.',
+            zhs: '一种塑胶底的防水屋顶。跟沥青片和瓦片不同的地方在于他的安装。这种屋顶是烧上去的，不是钉上去或卡上去的。如果屋顶是平顶的，这可能是最好的屋顶材质选项',
+            zht: '一種塑膠底的防水屋頂。跟瀝青片和瓦片不同的地方在於他的安裝。這種屋頂是燒上去的，不是釘上去或卡上去的。如果屋頂是平頂的，這可能是最好的屋頂材質選項.'
+          },
+          */
+          detail: {
+            en: '<p>We offers complete SBS system for flat or low slope roofing. ' +
+          'Generally, the complete SBS system contains a flexible SBS elastomeric bitumen waterproofing membrane with a non-woven polyester reinforcement. '+
+          'Both sides are protected by a thermofusible film. Also, there is another layer of SBS elastomeric bitumen waterproofing membranes with a non-woven polyester reinforcement. '+
+          'The topside is protected by slate chippings and the underside by a thermofusible film.</p>'+
+          '<ul>Benefits:'+ 
+            '<li>High performance: Non-woven polyester reinforcement of 180 g/m² offers excellent static and dynamic puncture resistance.</li>'+
+            '<li>Versatility: Designed to have a perfect adaptability to weather and movement of the substrate.</li>'+
+            '<li>Reliability and durability: Made from selected bitumen and polymers containing additives, which give a high resistance to weathering.</li>'+
+            '<li>Easy to apply: Underside and overlap protected by a thermofusible film for a quick and safe use with torch-on techniques. The topside is covered by slate chippings for the protection of the membrane against external elements and UV.</li>'+
+          '</ul>',
+          },  
+          category: ['residential'],
+        },
+        {
+          code: 'commSingle',
+          icon: '/static/img/services/commSingle/icon.png',
+          img: '/static/img/services/commSingle/project.jpg',
           name: {
             en: 'Single-Ply Roofing',
             zhs: '单层屋面',
             zht: '單層屋面'
           }, 
           detail: {
-            en: 'Single ply roof systems provide strength, flexibility, and long-lasting durability. The inherent advantages of pre-fabricated sheets are the consistency of the quality of the products that are manufactured, the versatility in their attachment methods, and therefore, their broader applicability.',
+            en: 'TO BE COPIED AND FORMATTED FROM EMAIL FROM JOVI',
             zhs: '单层屋顶是合成材料生产的柔性片材。提供坚固、灵活和持久的耐用性。',
             zht: '單層屋頂是合成材料生產的柔性片材，提供堅固，靈活和持久的耐用性。'
           },
-          category: ['commercial', 'residential'],
-        },
-        {
-          code: 'inverted',
-          icon: '/static/img/services/Inverted_Roofing.png',
-          name: {
-            en: 'Inverted Roofing',
-            zhs: '倒置式屋面系统',
-            zht: '倒置式屋面系统'
-          }, 
-          detail: {
-            en: 'In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.',
-            zhs: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉',
-            zht: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉'
-          },
           category: ['commercial'],
         },
+        
         {
           code: 'green',
-          icon: '/static/img/services/Skylight_Installation_and_Repair_for_Low_slope_Roofs.png',
+          icon: '/static/img/services/green/icon.png',
+          img: '/static/img/services/green/project.jpg',
           name: {
             en: 'Green roof',
             zhs: '绿化屋顶',
@@ -147,8 +165,41 @@ angular.module('heliosApp.services', [])
           category: ['commercial', 'residential'],
         },
         {
-          code: 'MetalRoof',
-          icon: '/static/img/services/Metal_Roofs.png',
+          code: 'insulation',
+          icon: '/static/img/services/insulation/icon.png',
+          img: '/static/img/services/insulation/project.jpg',
+          name: {
+            en: 'Insulation',
+            zhs: '绝缘隔热',
+            zht: '絕緣隔熱',
+          }, 
+          detail: {
+            en: 'Good insulation will keep the building warm in winter, save power and prevent from fire hazard.',
+            zhs: '良好的绝缘性将保持建筑物冬季保暖，节省电源和防止火灾的危险。',
+            zht: '良好的絕緣性將保持建築物冬季保暖，節省電源和防止火災的危險。'
+          },
+          category: ['commercial', 'residential'],
+        },
+        {
+          code: 'inverted',
+          icon: '/static/img/services/inverted/icon.png',
+          img: '/static/img/services/inverted/project.jpg',
+          name: {
+            en: 'Inverted Roofing',
+            zhs: '倒置式屋面系统',
+            zht: '倒置式屋面系统'
+          }, 
+          detail: {
+            en: 'In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.',
+            zhs: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉',
+            zht: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉'
+          },
+          category: ['commercial'],
+        },
+        {
+          code: 'metalRoof',
+          icon: '/static/img/services/metal/icon.png',
+          img: '/static/img/services/metal/project.jpg',
           name: {
             en: 'Metal Roofing',
             zhs: '金属屋顶',
@@ -162,40 +213,25 @@ angular.module('heliosApp.services', [])
           category: ['commercial', 'residential'],
         },
         {
-          code: 'ventilation',
-          icon: '/static/img/services/Ventilation.png',
-          img: '/static/img/services/Ventilation.jpg',
+          code: 'construction',
+          icon: '/static/img/services/maintenance/icon.png',
+          img: '/static/img/services/maintenance/project.jpg',
           name: {
-            en: 'Ventilation',
-            zhs: '通风',
-            zht: '通風',
+            en: 'New Construction',
+            zhs: '新建房屋楼宇',
+            zht: '新建房屋樓宇'
           }, 
           detail: {
-            en: 'We install and maintain ventilation system to keep fresh air indoor all the time',
-            zhs: '安装维护屋顶通风设备，保持室内空气清新。',
-            zht: '安裝維護屋頂通風設備，保持室內空氣清新。'
-          },
-          category: ['residential'],
-        },
-        {
-          code: 'skylight',
-          icon: '/static/img/services/Skylight_Installation_and_Repairs.png',
-          img: '/static/img/services/Skylight_Installation_and_Repairs.jpg',
-          name: {
-            en: 'Skylight Installation and Repair',
-            zhs: '天窗',
-            zht: '天窗'
-          }, 
-          detail: {
-            en: 'Our skylight installation let you enjoy sunshine anywhere at home.',
-            zhs: '贴心设计安装天窗，让您尽情享受温哥华的温暖阳光。',
-            zht: '貼心設計安裝天窗，讓您盡情享受溫哥華的溫暖陽光。'
+            en: 'Whether it’s Single or Multi-family, Development or Individually based, we are poised to take on your roofing project.',
+            zhs: '无论是商业工程还是个人住家，我们都欢迎大小屋顶工程合作。',
+            zht: '無論是商業工程還是個人住家，我們都歡迎大小屋頂工程合作。'
           },
           category: ['commercial', 'residential'],
         },
         {
           code: 'cedarConversion',
-          icon: '/static/img/services/Slate_and_Tile_Roofs.png',
+          icon: '/static/img/services/resCedar/icon.png',
+          img: '/static/img/services/resCedar/project.jpg',
           name: {
             en: 'Cedar Conversions roofing',
             zhs: '杉木屋顶翻新',
@@ -210,7 +246,8 @@ angular.module('heliosApp.services', [])
         },
         {
           code: 'tileRoofMaintenance',
-          icon: '/static/img/services/Repair_and_Maintenance.png',
+          icon: '/static/img/services/resTile/icon.png',
+          img: '/static/img/services/resTile/project.jpg',
           name: {
             en: 'Tile Roof Maintenance',
             zhs: '瓦屋顶日常维护及维修',
@@ -224,8 +261,43 @@ angular.module('heliosApp.services', [])
           category: ['residential'],
         },
         {
+          code: 'ventilation',
+          icon: '/static/img/services/ventilation/icon.png',
+          img: '/static/img/services/ventilation/project.jpg',
+          name: {
+            en: 'Ventilation',
+            zhs: '通风',
+            zht: '通風',
+          }, 
+          detail: {
+            en: 'We install and maintain ventilation system to keep fresh air indoor all the time',
+            zhs: '安装维护屋顶通风设备，保持室内空气清新。',
+            zht: '安裝維護屋頂通風設備，保持室內空氣清新。'
+          },
+          category: ['residential'],
+        },
+        {
+          code: 'skylight',
+          icon: '/static/img/services/skylight/icon.png',
+          img: '/static/img/services/skylight/project.jpg',
+          name: {
+            en: 'Skylight Installation and Repair',
+            zhs: '天窗',
+            zht: '天窗'
+          }, 
+          detail: {
+            en: 'Our skylight installation let you enjoy sunshine anywhere at home.',
+            zhs: '贴心设计安装天窗，让您尽情享受温哥华的温暖阳光。',
+            zht: '貼心設計安裝天窗，讓您盡情享受溫哥華的溫暖陽光。'
+          },
+          category: ['commercial', 'residential'],
+        },
+        
+        
+        {
           code: 'syntheticSlateShakeRoofing',
-          icon: '/static/img/services/Slate_and_Tile_Roofs.png',
+          icon: '/static/img/services/syntheticSlateShake/icon.png',
+          img: '/static/img/services/syntheticSlateShake/project.jpg',
           name: {
             en: 'Synthetic slate & shake roofing',
             zhs: '合成石板屋顶',
@@ -238,25 +310,10 @@ angular.module('heliosApp.services', [])
           },
           category: ['residential'],
         },
-        {
-          code: 'insulation',
-          icon: '/static/img/services/Insulation.png',
-          img: '/static/img/services/Insulation.jpg',
-          name: {
-            en: 'Insulation',
-            zhs: '绝缘隔热',
-            zht: '絕緣隔熱',
-          }, 
-          detail: {
-            en: 'Good insulation will keep the building warm in winter, save power and prevent from fire hazard.',
-            zhs: '良好的绝缘性将保持建筑物冬季保暖，节省电源和防止火灾的危险。',
-            zht: '良好的絕緣性將保持建築物冬季保暖，節省電源和防止火災的危險。'
-          },
-          category: ['commercial', 'residential'],
-        },
+        
         {
           code: 'waterproofing',
-          icon: '/static/img/services/Insulation.png',
+          icon: '/static/img/services/waterproofing/icon.png',
           name: {
             en: 'Waterproofing',
             zhs: '防水',
@@ -269,24 +326,11 @@ angular.module('heliosApp.services', [])
           },
           category: ['commercial'],
         },
+        
         {
-          code: 'construction',
-          icon: '/static/img/services/Repair_and_Maintenance.png',
-          name: {
-            en: 'New Construction',
-            zhs: '新建房屋楼宇',
-            zht: '新建房屋樓宇'
-          }, 
-          detail: {
-            en: 'Whether it’s Single or Multi-family, Development or Individually based, we are poised to take on your roofing project.',
-            zhs: '无论是商业工程还是个人住家，我们都欢迎大小屋顶工程合作。',
-            zht: '無論是商業工程還是個人住家，我們都歡迎大小屋頂工程合作。'
-          },
-          category: ['commercial', 'residential'],
-        },
-        {
-          code: 'maintenance',
-          icon: '/static/img/services/Repair_and_Maintenance.png',
+          code: 'commMaintenance',
+          icon: '/static/img/services/maintenance/icon.png',
+          img: '/static/img/services/maintenance/project.jpg',
           name: {
             en: 'Strata roof maintenance and repair',
             zhs: '日常维护及维修',
@@ -299,6 +343,22 @@ angular.module('heliosApp.services', [])
           },
           category: ['commercial'],
         },
+        {
+          code: 'resMaintenance',
+          icon: '/static/img/services/maintenance/icon.png',
+          img: '/static/img/services/maintenance/project.jpg',
+          name: {
+            en: 'Strata roof maintenance and repair',
+            zhs: '日常维护及维修',
+            zht: '日常維護及維修'
+          }, 
+          detail: {
+            en: 'We provides 24 x 7 support when you need us.',
+            zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
+            zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
+          },
+          category: ['residential'],
+        },
     ];
 
     var servicesMap = services.reduce(function(o, v, i) {
@@ -310,7 +370,7 @@ angular.module('heliosApp.services', [])
         'epdm': {
             'template': 'project.html',
             'title': 'EPDM',
-            'service': 'singlePly',
+            'service': 'commSingle',
             'info': 'Commercial Single Ply Roofing project',
             'folder': '/static/img/projects/commSingle/EPDM',
             'titleImg': '6.jpg',
@@ -318,7 +378,7 @@ angular.module('heliosApp.services', [])
         'bridgeport': {
             'template': 'project.html',
             'title': 'Bridgeport Road Richmond',
-            'service': 'torchOn',
+            'service': 'commTorch',
             'info': 'More info about this project...',
             'folder': '/static/img/projects/commTorchFlat/bridgeportRichmond',
             'titleImg': '5.jpg',
@@ -326,7 +386,7 @@ angular.module('heliosApp.services', [])
         'fraserSurrey': {
             'template': 'project.html',
             'title': 'Fraser Highway Surrey',
-            'service': 'torchOn',
+            'service': 'commTorch',
             'info': 'More info about this project...',
             'folder': '/static/img/projects/commTorchFlat/fraserSurrey',
             'titleImg': '9.jpg',
@@ -334,7 +394,7 @@ angular.module('heliosApp.services', [])
         'oakVancouver': {
             'template': 'project.html',
             'title': 'Oak Street Vancouver',
-            'service': 'torchOn',
+            'service': 'commTorch',
             'info': 'More info about this project...',
             'folder': '/static/img/projects/commTorchFlat/oakVancouver',
             'titleImg': '4.jpg',
@@ -342,7 +402,7 @@ angular.module('heliosApp.services', [])
         'vanturaAbbortsford': {
             'template': 'project.html',
             'title': 'Vantura Road, Abbortsford',
-            'service': 'torchOn',
+            'service': 'commTorch',
             'info': 'More info about this project...',
             'folder': '/static/img/projects/commTorchFlat/vanturaAbbortsford',
             'titleImg': '5.jpg',
@@ -366,15 +426,7 @@ angular.module('heliosApp.services', [])
         'liquid': {
             'template': 'project.html',
             'title': 'Samlin Dr, Vancouver',
-            'service': 'liquid',
-            'info': 'More info about this project...',            
-            'folder': '/static/img/projects/liquid',
-            'titleImg': '5.jpg',
-        },
-        'liquid': {
-            'template': 'project.html',
-            'title': 'Samlin Dr, Vancouver',
-            'service': 'MetalRoof',
+            'service': 'metalRoof',
             'info': 'More info about this project...',            
             'folder': '/static/img/projects/liquid',
             'titleImg': '5.jpg',
@@ -382,7 +434,7 @@ angular.module('heliosApp.services', [])
         'metal1': {
             'template': 'project.html',
             'title': 'Metal roofing project',
-            'service': 'MetalRoof',
+            'service': 'metalRoof',
             'info': 'More info about this project...',            
             'folder': '/static/img/projects/metal/proj1',
             'titleImg': '2.jpg',
@@ -390,7 +442,7 @@ angular.module('heliosApp.services', [])
         'metal2': {
             'template': 'project.html',
             'title': 'W 21 Street, Vancouver',
-            'service': 'MetalRoof',
+            'service': 'metalRoof',
             'info': 'More info about this project...',            
             'folder': '/static/img/projects/metal/w21Vancouver',
             'titleImg': '3.jpg',
@@ -449,7 +501,7 @@ angular.module('heliosApp.services', [])
             'service': 'tileRoofMaintenance',
             'info': 'More info about this project...',            
             'folder': '/static/img/projects/resTile/arrowsmithCoquitlam',
-            'titleImg': '8.jpg',
+            'titleImg': '4.jpg',
         },
         'resTile2': {
             'template': 'project.html',
@@ -462,7 +514,7 @@ angular.module('heliosApp.services', [])
         'resTorch1': {
             'template': 'project.html',
             'title': 'Rayside street, Burnaby',
-            'service': 'torchOn',
+            'service': 'resTorch',
             'info': 'More info about this project...',            
             'folder': '/static/img/projects/resTorch/raysideBurnaby',
             'titleImg': '6.jpg',
@@ -470,7 +522,7 @@ angular.module('heliosApp.services', [])
         'resTorch2': {
             'template': 'project.html',
             'title': 'Grant street, Burnaby',
-            'service': 'torchOn',
+            'service': 'resTorch',
             'info': 'More info about this project...',            
             'folder': '/static/img/projects/resTorch/grantBurnaby',
             'titleImg': '9.jpg',
@@ -485,7 +537,7 @@ angular.module('heliosApp.services', [])
           });
         },
         serviceCategories: serviceCategories,
-        serviceHighlight: ['torchOn', 'skylight', 'insulation', 'ventilation'].map(function(serviceId){
+        serviceHighlight: ['commTorch', 'skylight', 'insulation', 'ventilation'].map(function(serviceId){
           return servicesMap[serviceId];
         }),
         serviceDetail: function(serviceId){
@@ -496,7 +548,7 @@ angular.module('heliosApp.services', [])
           summary.projectId = projectId;
           return summary;
         }),
-        projectHighlight: ['liquid', 'insulation'].map(function(projectId){
+        projectHighlight: ['liquid', 'green', 'insulation'].map(function(projectId){
           var summary = projectsMap[projectId];
           summary.projectId = projectId;
           return summary;
