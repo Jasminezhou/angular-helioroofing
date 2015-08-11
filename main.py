@@ -27,7 +27,7 @@ class MainHandler(webapp2.RequestHandler):
 class SendEmailHandler(webapp2.RequestHandler):
     def get(self):
         # make a secure connection to SendGrid
-        sg = SendGridClient('jeffreykong', 'Q!W@E#r4t5y6', secure=True)
+        #sg = SendGridClient('userid', 'password', secure=True)
         print sg
 
         # make a message object
@@ -38,7 +38,7 @@ class SendEmailHandler(webapp2.RequestHandler):
         message.set_from('from@example.com')
 
         # add a recipient
-        message.add_to('Jeffrey Kong <kongbabysoon@gmail.com>')
+        message.add_to('Name <email>')
 
         # use the Web API to send your message
         sg.send(message)
