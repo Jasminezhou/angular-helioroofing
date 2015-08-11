@@ -73,8 +73,8 @@ angular.module('heliosApp.services', [])
     var services = [
         {
           code: 'commTorch',
-          icon: '/static/img/services/CommTorchFlat/icon.png',
-          img: '/static/img/services/CommTorchFlat/project.jpg',
+          icon: '/static/img/services/commTorchFlat/icon.png',
+          img: '/static/img/services/commTorchFlat/project.jpg',
           name: {
             en: 'Torch-On Roofing',
             zhs: '烫胶屋顶',
@@ -103,8 +103,8 @@ angular.module('heliosApp.services', [])
         },
         {
           code: 'resTorch',
-          icon: '/static/img/services/ResTorch/icon.png',
-          img: '/static/img/services/ResTorch/project.jpg',
+          icon: '/static/img/services/resTorch/icon.png',
+          img: '/static/img/services/resTorch/project.jpg',
           name: {
             en: 'Torch-On Roofing',
             zhs: '烫胶屋顶',
@@ -141,9 +141,7 @@ angular.module('heliosApp.services', [])
             zht: '單層屋面'
           }, 
           detail: {
-            en: 'TO BE COPIED AND FORMATTED FROM EMAIL FROM JOVI',
-            zhs: '单层屋顶是合成材料生产的柔性片材。提供坚固、灵活和持久的耐用性。',
-            zht: '單層屋頂是合成材料生產的柔性片材，提供堅固，靈活和持久的耐用性。'
+            en: '<p>EPDM single-ply membranes have been the commercial roofing industry’s material of choice for nearly half a century. Today, we offer the most high-performance, energy-efficient, sustainable and innovative line of EPDM membranes and accessories on the market. From Factory-Applied Tape for stronger, more dependable seams to the industry’s only ENERGY-STAR®-qualified EPDM membrane. So when you need a sustainable, long-lasting rooftop, look no further than the single-ply membrane with nearly a half-century track record of performance and durability --> EPDM.</p> </br> <p>Thermoplastic polyolefin (TPO) is the fastest-growing segment of the commercial roofing industry, and we are able to offer this type of roofing material. TPO white and tan membranes are ENERGY STAR®-qualified and Cool Roof Rating Council (CRRC)-certified, and have been directly attributed to a reduction in energy use and cooling costs for buildings in warm climates. </p> </br> <h4>Benefits</h4> <h5>COST EFFECTIVE</h5> <ul> <li>Application techniques offer fast track installation on every project specified, creating real value by reducing site labour time. Additionally the rapid installation programme often permits early fit-out below, keeping work to programme and reducing the time to completion and hand-over.</li> <li>The lightweight system allows for other building materials and structural steel to be reduced at the building’s conceptual stage.</li> <li>Single ply is ideal for new build or refurbishment projects.</li> </ul> </br> <h5>DURABLE</h5> <ul> <li>Hot air welding for the seams provides a strong and reliable bond that is well recognised in the single ply roofing industry. The fused overlapping membrane sheets provide a homogenous layer and total waterproofing security.<li> <li>With high tensile strength in excess of 1200N for Thermoplan and 1100N for Thermofol, the closed fibre pre-coated polyester cross-weave reinforces the membranes and makes them resistant to tears and punctures.<li> <li>The membranes have been developed to withstand climatic extremes and temperature shocks.<li> </ul> </br> <h5>CHEMICALLY RESISTANT</h5> <ul> </li>Our use of high quality polymers and constituents in the formula ensures the membranes remain flexible to at least -30 degrees centigrade.</li> </ul> </br> <h5>FLAME-FREE INSTALLATION</h5> <ul> <li>The seams are thermally welded with hot air replacing traditional torching methods, bringing its installation in line with the outlook for safety conscious practice.</li> </ul> </br> <h5>RESISTANT TO NATURAL ELEMENTS</h5> <ul> <li>The integrated woven lattice reinforcements within the membrane, together with the high performance fastening system and strong homogenous welded seams combine to eliminate the risk of wind uplift failure.</li> <li>The reflective pearl white finish of the Thermoplan pearl-white membrane reduces solar gain, minimising thermal and structural movement in the construction.</li> <li>The FPO and PVC formulations ensure full resistance to micro-organism attack which is vital to their success in ballasted or green roof situations.</li> </ul> </br> <h5>FIRE RESISTANCE</h5> <ul> <li>To provide maximum fire resistance, our formulation includes a high performance halogen-free fire retardant which means the membrane carries a FAB fire rating.</li> <li>Our choice of fire retardant reduces the volume of product required allowing for a greater percentage of active polymer in the formulation.</li> </ul> <h5>ENVIRONMENTAL CREDENTIALS</h5> <ul> <li>Thermoplan T contains no heavy metals, halogens or plasticisers.</li> <li>Thermoplan T has one of the lowest production embodied energy values.</li> <li>The reflectivity of Thermoplan T reduces solar gain and contributes to energy conservation within the building.</li> </ul> <h5>PRACTICAL SUSTAINABILITY</h5> <ul> <li>Thermoplan T is 100% recyclable and can be reprocessed at our manufacturing plant.</li> <li>PVC membranes can be recycled and converted in to other components such as protective or separation layers for roofs.</li> <li>Putting an extensive green roof on top of a single ply system provides an area of natural habitat for plants and small wildlife.  </li> <li>An extensive green roof will protect the waterproofing membrane from climatic extremes, ultra-violet light and mechanical damage, significantly increasing the life expectancy of the system.</li> <li>With an extensive green roof, all the additional environmental benefits are gained including reduction in rain water run-off which humidifies the air helping to reduce the ‘heat island’ effect.</li> <li>An extensive green roof, ballasted or paved finish will considerably reduce sound from both inside and outside the building.</li> </ul>',
           },
           category: ['commercial'],
         },
@@ -158,7 +156,7 @@ angular.module('heliosApp.services', [])
             zht: '綠化屋頂',
           }, 
           detail: {
-            en: 'A green roof or living roof is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane.',
+            en: 'A green roof or living roof is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane. <h5>Benefits</h5> <ul> <li>-Less air pollution and greenhouse gas is produced when cooling demands are lowered.</li> <li>-Green roofs can beautify an environment.</li> <li>-Green roofs can reduce and slow stormwater runoff.</li> <li>-A green roofs acts as an insulator for a building which reduces heating and cooling demands.</li> <li>-Green roofs improve indoor comfort by reducing heat transfer, resulting in a more comfortable temperature.</li> </ul>',
             zhs: '绿化屋顶是指在天台或屋顶上大规模栽种植物, 从而吸收热能，有助散热，调节雨水流量。',
             zht: '綠化屋頂是指在天台或屋頂上大規模栽種植物, 从而吸收熱能，有助散熱，調節雨水流量。',
           },
@@ -190,7 +188,7 @@ angular.module('heliosApp.services', [])
             zht: '倒置式屋面系统'
           }, 
           detail: {
-            en: 'In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.',
+            en: '<p>In this type of construction the principal thermal insulation material is applied on top of the weatherproof covering so that the complete roof construction including roof covering is kept at warm temperatures during the winter months and at moderate temperatures during the summer months.<p> <h5>Benefits</h5> <p>The advantages of the inverted roof reveal themselves when compared to any other flat roof solution. Because of the danger of condensation, the complex structural design, and the problematic breathability, the double shell cold roof, as a possible structural design solution for flat roofs, is not commonly used. Even though it provides a perfect solution, the straight layer order type of the single shell warm roof has a shorter life expectancy due to the water insulation’s exposure to weather and its implementation without mechanical protection in general, and in the case of failure it is also harder to find and repair the damage. The inverted flat roof answers all physical, implementation, and operational/usage problems by placing the thermal insulation above the water insulation. The temperature of the thermally insulated waterproofing membrane is roughly the same during the whole year, and in addition to the appropriate mechanical protection, the insulation also provides protection against UV radiation.</p>',
             zhs: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉',
             zht: '这种类型的屋顶将绝缘隔热层涂附在全天候防水屋顶的顶部，从而保证屋顶冬暖夏凉'
           },
@@ -206,7 +204,7 @@ angular.module('heliosApp.services', [])
             zht: '金屬屋頂'
           }, 
           detail: {
-            en: 'A metal roof is a roofing system made from metal piece, or tiles. It is a component of the building envelope. It is very durable in cold weather and are 100% recyclable',
+            en: 'A metal roof is a roofing system made from metal piece, or tiles. It is a component of the building envelope. It is very durable in cold weather and are 100% recyclable <h5>Benefits</h5> <ul> <li>Proven performance expectation of 50+ years </li> <li>Beautiful styles to match any home or neighborhood </li> <li>Interlocking panels for maximum wind resistance </li> <li>Fire resistance </li> <li>Energy efficiency by keeping homes cooler </li> <li>Low weight to help preserve structural integrity and life</li> </ul>',
             zhs: '金属屋顶是由金属片或瓦片制成的屋面系统。金属屋顶的材质非常耐用，特别是在寒冷的天气状况下。并且金属屋顶的材料非常环保，均为可回收材料。',
             zht: '金屬屋頂是由金屬片或瓦片製成的屋面系統。金屬屋頂的材質非常耐用，特別是在寒冷的天氣狀況下。並且金屬屋頂的材料非常環保，均為可回收材料。'
           },
