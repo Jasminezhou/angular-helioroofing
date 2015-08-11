@@ -574,6 +574,7 @@ footer{
 }
 
 
+
 /* End of Services*/
 
 
@@ -782,6 +783,11 @@ a.autolinker {
 .modal-dialog .detial-img{
   width: 100%;
   padding: 15px 0px;
+}
+
+.service-detail .detail-text {
+  line-height: 1.8em;
+  margin: 50px 0;
 }
 
 button.close{

@@ -1,4 +1,4 @@
-<div class="row service-detial">
+<div class="row service-detail">
 
 	<div class="col-md-1">
 		<img class="servrice-icon" ng-src="{{service.icon}}"> 
@@ -7,7 +7,7 @@
 		
 	<div class="col-md-7"> 
 		<h4 class="text-center modal-title">{{service.name | translate: this}}</h4>  
-	    <div ng-bind-html="service.detail[language] || service.detail.en"></div>
+	    <div class="detail-text" ng-bind-html="service.detail[language] || service.detail.en"></div>
 	</div>
 
 

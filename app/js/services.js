@@ -92,7 +92,7 @@ angular.module('heliosApp.services', [])
           'Generally, the complete SBS system contains a flexible SBS elastomeric bitumen waterproofing membrane with a non-woven polyester reinforcement. '+
           'Both sides are protected by a thermofusible film. Also, there is another layer of SBS elastomeric bitumen waterproofing membranes with a non-woven polyester reinforcement. '+
           'The topside is protected by slate chippings and the underside by a thermofusible film.</p>'+
-          '<ul>Benefits:'+ 
+          '<h5>Benefits:</h5><ul>'+ 
             '<li>High performance: Non-woven polyester reinforcement of 180 g/m² offers excellent static and dynamic puncture resistance.</li>'+
             '<li>Versatility: Designed to have a perfect adaptability to weather and movement of the substrate.</li>'+
             '<li>Reliability and durability: Made from selected bitumen and polymers containing additives, which give a high resistance to weathering.</li>'+
@@ -122,7 +122,7 @@ angular.module('heliosApp.services', [])
           'Generally, the complete SBS system contains a flexible SBS elastomeric bitumen waterproofing membrane with a non-woven polyester reinforcement. '+
           'Both sides are protected by a thermofusible film. Also, there is another layer of SBS elastomeric bitumen waterproofing membranes with a non-woven polyester reinforcement. '+
           'The topside is protected by slate chippings and the underside by a thermofusible film.</p>'+
-          '<ul>Benefits:'+ 
+          '<h5>Benefits:</h5><ul>'+ 
             '<li>High performance: Non-woven polyester reinforcement of 180 g/m² offers excellent static and dynamic puncture resistance.</li>'+
             '<li>Versatility: Designed to have a perfect adaptability to weather and movement of the substrate.</li>'+
             '<li>Reliability and durability: Made from selected bitumen and polymers containing additives, which give a high resistance to weathering.</li>'+
@@ -156,7 +156,7 @@ angular.module('heliosApp.services', [])
             zht: '綠化屋頂',
           }, 
           detail: {
-            en: 'A green roof or living roof is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane. <h5>Benefits</h5> <ul> <li>-Less air pollution and greenhouse gas is produced when cooling demands are lowered.</li> <li>-Green roofs can beautify an environment.</li> <li>-Green roofs can reduce and slow stormwater runoff.</li> <li>-A green roofs acts as an insulator for a building which reduces heating and cooling demands.</li> <li>-Green roofs improve indoor comfort by reducing heat transfer, resulting in a more comfortable temperature.</li> </ul>',
+            en: 'A green roof or living roof is a roof of a building that is partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane. <h5>Benefits</h5> <ul> <li>Less air pollution and greenhouse gas is produced when cooling demands are lowered.</li> <li>Green roofs can beautify an environment.</li> <li>Green roofs can reduce and slow stormwater runoff.</li> <li>A green roofs acts as an insulator for a building which reduces heating and cooling demands.</li> <li>Green roofs improve indoor comfort by reducing heat transfer, resulting in a more comfortable temperature.</li> </ul>',
             zhs: '绿化屋顶是指在天台或屋顶上大规模栽种植物, 从而吸收热能，有助散热，调节雨水流量。',
             zht: '綠化屋頂是指在天台或屋頂上大規模栽種植物, 从而吸收熱能，有助散熱，調節雨水流量。',
           },
@@ -172,7 +172,7 @@ angular.module('heliosApp.services', [])
             zht: '絕緣隔熱',
           }, 
           detail: {
-            en: 'Good insulation will keep the building warm in winter, save power and prevent from fire hazard.',
+            en: '<p>Thermal insulation in buildings is an important factor to achieving thermal comfort for its occupants. Insulation reduces unwanted heat loss or gain and can decrease the energy demands of heating and cooling systems. It does not necessarily deal with issues of adequate ventilation and may or may not affect the level of sound insulation.</p> <h5>Benefits</h5> <ul> <li>Insulation acts as a barrier to heat loss and heat gain, particularly in roofs and ceilings, walls and floors.</li> <li>In many homes insulation is the most practical and cost effective way to make a house more energy efficient, keeping it cooler in summer and warmer in winter and saving up to 40 per cent in heating and cooling bills. In addition, insulation may reduce condensation in the home. This can provide health benefits by reducing mould and damp.</li>',
             zhs: '良好的绝缘性将保持建筑物冬季保暖，节省电源和防止火灾的危险。',
             zht: '良好的絕緣性將保持建築物冬季保暖，節省電源和防止火災的危險。'
           },
@@ -268,7 +268,7 @@ angular.module('heliosApp.services', [])
             zht: '通風',
           }, 
           detail: {
-            en: 'We install and maintain ventilation system to keep fresh air indoor all the time',
+            en: '<p>Ventilating is the process of "processing" or replacing air in any space to provide high indoor air quality (i.e. to control temperature, replenish oxygen, or remove moisture, odors, smoke, heat, dust, airborne bacteria and carbon dioxide). Ventilation is used to remove unpleasant smells and excessive moisture, introduce outside air, to keep interior building air circulating, and to prevent stagnation of the interior air.</p> <h5>Benefits.</h5> <ul> <li>It helps reduce damaging moisture. Excessive moisture can build up in the attic, potentially damaging the structure and degrading the roof system. It can also lead to mold.</li> <li>It can help save energy. Heat build-up in that attic comes at a cost—a home’s air conditioning has to work harder to cool down the house, especially the living space below the attic.</li> <li>It helps prevent damage to the roof shingles. High attic heat can bake the shingle and cause them to prematurely age. In fact, most major shingle manufacturers strongly recommend proper attic ventilation on asphalt shingle installations.</li> </ul>',
             zhs: '安装维护屋顶通风设备，保持室内空气清新。',
             zht: '安裝維護屋頂通風設備，保持室內空氣清新。'
           },
@@ -284,7 +284,7 @@ angular.module('heliosApp.services', [])
             zht: '天窗'
           }, 
           detail: {
-            en: 'Our skylight installation let you enjoy sunshine anywhere at home.',
+            en: "<p>Our skylight installation let you enjoy sunshine anywhere at your property.</p> <p>Our skylight repair prevent water leak inside your property. </p> <h5>Benefits</h5> <ul> <li>Energy Efficiency by reducing the demand for unsustainable power that is currently challenging the health of the world's environment.</li> <li>Optimal daylight</li> <li>Save Money</li> <li>Ventilation by an electric venting skylight which will opens to produce a \"passive air conditioner\".</li> </ul>",
             zhs: '贴心设计安装天窗，让您尽情享受温哥华的温暖阳光。',
             zht: '貼心設計安裝天窗，讓您盡情享受溫哥華的溫暖陽光。'
           },
@@ -302,7 +302,7 @@ angular.module('heliosApp.services', [])
             zht: '合成石板屋顶'
           }, 
           detail: {
-            en: 'Synthetic slate is considered a premium roofing product, compared to standard asphalt shingles. Many synthetic slate roofing products are guaranteed to last at least from 30 to 50 years. These low maintenance roofing tiles are designed to withstand high wind, fire, freeze-thaw cycles, and other conditions. Some roofing tiles also contain fire retardant and UV inhibitors for extra protection.',
+            en: "</p>Synthetic slate is considered a premium roofing product, compared to standard asphalt shingles. Many synthetic slate roofing products are guaranteed to last at least from 30 to 50 years. These low maintenance roofing tiles are designed to withstand high wind, fire, freeze-thaw cycles, and other conditions. Some roofing tiles also contain fire retardant and UV inhibitors for extra protection.</p> <ul> <li>Synthetic slate is considered a \"green\" building alternative—even those that use virgin materials—because all types of synthetic slate can be recycled at the end of a roof's usable life.</li> <li>Synthetic slate shingles are more durable than authentic slate, as they contain advanced ultraviolet inhibitors to reduce wear from the sun.</li> <li>Safety is built-in. Synthetic slate typically contains impact modifiers to help withstand storm damage; in fact, most are certified by Underwriters Laboratories for Class 4 impact resistance, the highest level for roofing materials. Many synthetic slates also have the highest fire-resistance rating—Class A—which means they're effective against severe exposure to external fires, are not readily flammable and do not spread fire.</li> <li>Transportation and installation of synthetic slate shingles is easier and less expensive than other roofing materials. Synthetic slate shingles are lighter than all asphalt shingles and, at 1.25 pounds per tile, are only a quarter the weight of authentic slate shingles. Their light weight also means that a standard roof structure can support synthetic slate shingles with no special reinforcement, making them practical for mainstream residential construction. During installation, synthetic slate shingles can easily be field- cut with a utility knife and nailed into place with standard roofing nails and a pneumatic nail gun. These characteristics are in sharp contrast with those of authentic slate installation, which requires precision cutting and nailing of heavy shingles that chip and crack easily.</li> </ul>",
             zhs: '合成石板被认为是优质屋面产品。许多合成石板屋面产品都保证至少要持续30至50年。这些低维护屋面瓦被设计成能承受高风，火，冻融循环，以及其他条件。一些屋顶上的瓦片也含有阻燃剂和紫外线抑制剂提供额外的保护。',
             zht: '合成石板被認為是優質屋面產品。許多合成石板屋面產品都保證至少要持續30至50年。這些低維護屋面瓦被設計成能承受高風，火，凍融循環，以及其他條件。一些屋頂上的瓦片也含有阻燃劑和紫外線抑製劑提供額外的保護。'
           },
@@ -318,7 +318,7 @@ angular.module('heliosApp.services', [])
             zht: '防水'
           }, 
           detail: {
-            en: 'We help on waterproofing solutions to your commercial properties.',
+            en: "<p>Dampproofing is a coating, usually asphalt-based, that is either sprayed on or hand applied to the outside of the wall. Though less frequently recommended in modern residential construction, it is still an acceptable form of treatment in many situations. The drawbacks include an inability to seal larger cracks or holes left by form ties and the potential for damage by coarse or careless backfill. But with proper surface drainage, correctly installed foundation drains at the footing, and the absence of hydrostatic pressure to drive water infiltration, dampproofing can supply adequate and long-lasting protection for many crawl spaces and basements.</p> <p>Waterproofing a foundation requires the same care as dampproofing in regard to surface treatment and drain pipe, but is much more exacting in the treatment of the wall itself. Obviously, if there is any doubt about whether or not dampproofing will do the job, it's best to spend the extra time and money to waterproof, particularly for habitable space.</p>",
             zhs: '我们为您的商业楼宇提供最好的防水防漏解决方案。',
             zht: '我們為您的商業樓宇提供最好的防水防漏解決方案。'
           },
@@ -351,7 +351,7 @@ angular.module('heliosApp.services', [])
             zht: '日常維護及維修'
           }, 
           detail: {
-            en: 'We provides 24 x 7 support when you need us.',
+            en: "<p>A roof everyday exposures to sun, rain, air conditioning repair people, and other wear and tear slowly ages the roof until the service life ends. Every extra year one can eke out of the roof is that much more money that can be saved for other purposes. A roof does need regular check-ups in the form of regular inspections and prompt repairs. </p> <h5>Benefits</h5> <ul> <li>Why scheduled roof maintenance? <p>The questions always come up... \"Why should I spend money on something that isn't leaking?\" or \"Can you prove there is a return on the money spent?\" or \"Why do I need maintenance if I have a warranty?\"</p> </li> <li>There is an answer for all these questions. <p>The life of your roof is directly related to how often it is inspected and how quickly small problems are identified and repaired.  The data shown that their average roof lasted less than five years before leakage occurred and less than eight years before replacement. It also has shown that as many as 35% of all roofs do not reach their expectancy. </p> </li> </ul> <p>Our goal at Comprehensive Roof Maintenance is to educate as many owners and building managers to the fact that programmed roof maintenance makes economic sense.  A roof inspected semi-annually or annually can last as much as 50% longer than one that is visited only when there is a leak. Maintenance with documentation provides you with a written history of repairs, a projected life expectancy, and clear budget numbers for future expenditures. It gives you both knowledge and control. It protects your asset and provides value.</p>",
             zhs: '24小时紧急维修服务让您随时随地获得我们的支持。',
             zht: '24小時緊急維修服務讓您隨時隨地獲得我們的支持。'
           },
